@@ -124,9 +124,9 @@ export const PRODUCTS: Product[] = [
       "Soundex Coding Quick Reference Chart",
       "Oral History Recording Audio Release Form"
     ],
-    coverImage: "https://images.unsplash.com/photo-1507842229451-7f01be7fe70d?auto=format&fit=crop&w=800&q=80",
+    coverImage: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80",
     galleryImages: [
-      "https://images.unsplash.com/photo-1507842229451-7f01be7fe70d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80"
     ],
     badge: "Ultimate Value Bundle",

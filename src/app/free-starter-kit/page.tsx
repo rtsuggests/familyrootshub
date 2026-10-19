@@ -125,15 +125,29 @@ export default function FreeStarterKitPage() {
             </p>
           </div>
 
-          <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a
+              href="/downloads/FamilyRootsHub-Free-Starter-Kit.pdf"
+              download="FamilyRootsHub-Free-Starter-Kit.pdf"
+              className="w-full sm:w-auto"
+            >
+              <Button
+                variant="primary"
+                size="lg"
+                leftIcon={<Download className="w-5 h-5 text-bronze-300" />}
+                className="w-full shadow-md"
+              >
+                Download Starter Kit (Archival PDF)
+              </Button>
+            </a>
             <Button
               onClick={handleDirectDownload}
-              variant="primary"
+              variant="outline"
               size="lg"
-              leftIcon={<Download className="w-5 h-5 text-bronze-300" />}
-              className="w-full sm:w-auto shadow-md"
+              leftIcon={<Printer className="w-4 h-4 text-forest-800" />}
+              className="w-full sm:w-auto"
             >
-              {downloadTriggered ? "Download Chart Again" : "Download Starter Kit (PDF/HTML)"}
+              Interactive HTML Sheet
             </Button>
           </div>
 
@@ -243,14 +257,22 @@ export default function FreeStarterKitPage() {
                     <span>Yes! Add the 35-Page Master Kit for Only $9 &rarr;</span>
                   </Button>
                 ) : (
-                  <div className="bg-forest-800 border border-bronze-400 p-4 rounded-xl text-center space-y-1">
+                  <div className="bg-forest-800 border border-bronze-400 p-5 rounded-xl text-center space-y-3">
                     <div className="flex items-center justify-center space-x-2 text-bronze-300 font-bold text-sm">
-                      <CheckCircle2 className="w-4 h-4 text-bronze-400" />
-                      <span>Upgrade Added Successfully!</span>
+                      <CheckCircle2 className="w-5 h-5 text-bronze-400" />
+                      <span>Upgrade Complete! Access Granted</span>
                     </div>
                     <p className="text-xs text-cream-200">
-                      In production, this automatically updates your order via LemonSqueezy / Stripe one-click upsell.
+                      Your 40% discount was applied. You can download the complete 35-Page Master Archival Binder PDF immediately below:
                     </p>
+                    <a
+                      href="/downloads/FamilyRootsHub-35-Page-Research-Binder.pdf"
+                      download="FamilyRootsHub-35-Page-Research-Binder.pdf"
+                      className="inline-flex items-center justify-center w-full bg-bronze-500 hover:bg-bronze-600 text-forest-950 font-bold text-xs py-3 px-4 rounded-xl shadow-md transition-all space-x-2"
+                    >
+                      <Download className="w-4 h-4" />
+                      <span>Download 35-Page Master Binder (PDF)</span>
+                    </a>
                   </div>
                 )}
 

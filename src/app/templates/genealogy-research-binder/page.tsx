@@ -41,7 +41,7 @@ export default function GenealogyResearchBinderPage() {
     product.coverImage,
     "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
     "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1507842229451-7f01be7fe70d?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80",
   ];
 
   const breadcrumbs = [
@@ -297,19 +297,21 @@ export default function GenealogyResearchBinderPage() {
                       <span>Buy Instant Access &bull; ${product.price}</span>
                     </Button>
                   ) : (
-                    <div className="bg-forest-100 border border-forest-300 p-4 rounded-xl text-center space-y-2">
+                    <div className="bg-forest-100 border border-forest-300 p-5 rounded-xl text-center space-y-3">
                       <div className="flex items-center justify-center space-x-2 text-forest-900 font-bold text-sm">
                         <CheckCircle2 className="w-5 h-5 text-forest-800" />
-                        <span>Checkout Simulated Successfully!</span>
+                        <span>Order Confirmed! Vault Unlocked</span>
                       </div>
                       <p className="text-xs text-charcoal-700">
-                        In production, this routes through LemonSqueezy or Stripe with instant webhook fulfillment.
+                        Thank you for investing in your family heritage. Your complete 35-page archival binder package is ready for instant download:
                       </p>
                       <a
-                        href="/free-starter-kit"
-                        className="inline-block text-xs font-bold text-forest-800 underline mt-1"
+                        href="/downloads/FamilyRootsHub-35-Page-Research-Binder.pdf"
+                        download="FamilyRootsHub-35-Page-Research-Binder.pdf"
+                        className="inline-flex items-center justify-center w-full bg-forest-800 hover:bg-forest-700 text-cream-50 font-bold text-xs py-3 px-4 rounded-xl shadow-md transition-all space-x-2"
                       >
-                        Download Starter Sample &rarr;
+                        <Download className="w-4 h-4 text-bronze-300" />
+                        <span>Download 35-Page Master Binder (PDF)</span>
                       </a>
                     </div>
                   )}

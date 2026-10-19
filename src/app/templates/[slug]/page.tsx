@@ -23,6 +23,7 @@ import { Button } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { ProductJsonLd, FaqJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 import { StickyCheckoutBar } from "@/components/StickyCheckoutBar";
+import { ProductPurchaseBox } from "@/components/ProductPurchaseBox";
 
 interface ProductPageProps {
   params: {
@@ -200,36 +201,8 @@ export default function GenericProductPage({ params }: ProductPageProps) {
                   ))}
                 </div>
 
-                {/* Purchase Button */}
-                <div className="pt-2">
-                  <a
-                    href={`https://checkout.familyrootshub.com/order?product=${product.id}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    <Button
-                      variant="secondary"
-                      size="xl"
-                      className="w-full shadow-lg"
-                      leftIcon={<ShoppingBag className="w-5 h-5 text-forest-950" />}
-                    >
-                      <span>Buy Instant Access &bull; {formatPrice(product.price)}</span>
-                    </Button>
-                  </a>
-
-                  <div className="flex items-center justify-center space-x-4 text-[11px] text-charcoal-500 pt-3">
-                    <span className="flex items-center">
-                      <ShieldCheck className="w-3.5 h-3.5 text-forest-700 mr-1" />
-                      30-Day Money Back Guarantee
-                    </span>
-                    <span>&bull;</span>
-                    <span className="flex items-center">
-                      <Zap className="w-3.5 h-3.5 text-bronze-600 mr-1" />
-                      Instant PDF Delivery
-                    </span>
-                  </div>
-                </div>
+                {/* Purchase Action Box with Instant Archival PDF Delivery */}
+                <ProductPurchaseBox product={product} />
               </div>
             </div>
           </div>

@@ -278,18 +278,28 @@ export const EmailModal: React.FC<EmailModalProps> = ({
                   File Download Status:
                 </div>
                 <div className="flex items-center justify-between text-xs text-charcoal-700">
-                  <span>Pedigree-Starter-Kit.html (Printable/Save-as-PDF)</span>
-                  <span className="text-forest-800 font-semibold">Completed</span>
+                  <span>Pedigree-Starter-Kit (PDF &amp; HTML)</span>
+                  <span className="text-forest-800 font-semibold">Ready</span>
                 </div>
-                <Button
-                  onClick={triggerDownload}
-                  variant="outline"
-                  size="sm"
-                  className="w-full mt-2"
-                  leftIcon={<Download className="w-3.5 h-3.5" />}
-                >
-                  Download Again
-                </Button>
+                <div className="grid grid-cols-2 gap-2 mt-2">
+                  <a
+                    href="/downloads/FamilyRootsHub-Free-Starter-Kit.pdf"
+                    download="FamilyRootsHub-Free-Starter-Kit.pdf"
+                    className="inline-flex items-center justify-center bg-forest-800 hover:bg-forest-700 text-cream-50 font-semibold text-xs py-2 px-3 rounded-lg shadow-sm space-x-1.5 transition-colors"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    <span>Download PDF</span>
+                  </a>
+                  <Button
+                    onClick={triggerDownload}
+                    variant="outline"
+                    size="sm"
+                    className="w-full"
+                    leftIcon={<Download className="w-3.5 h-3.5" />}
+                  >
+                    HTML Sheet
+                  </Button>
+                </div>
               </div>
 
               {/* Tripwire One-Time-Offer (OTO) Teaser */}
