@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FamilyRootsHub.com — Archival 4-Generation Pedigree Chart & Research Log</title>
+<style>
+  @page { size: letter landscape; margin: 0.5in; }
+  body {
+    font-family: 'Times New Roman', Georgia, serif;
+    color: #1E3A2F;
+    background: #FAF8F5;
+    margin: 0;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+  .sheet {
+    background: #ffffff;
+    border: 2px solid #1E3A2F;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(30, 58, 47, 0.08);
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+  .header {
+    text-align: center;
+    border-bottom: 2px solid #1E3A2F;
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1E3A2F;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: #B8860B;
+    margin-top: 4px;
+    font-style: italic;
+    font-weight: 600;
+  }
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 14px;
+    font-size: 11px;
+    border-top: 1px dotted #ccc;
+    padding-top: 10px;
+  }
+  .tree-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+    min-height: 440px;
+  }
+  .gen-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .gen-tag {
+    font-size: 11px;
+    font-weight: bold;
+    color: #B8860B;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    text-align: center;
+    border-bottom: 1px solid #E3D7C5;
+    padding-bottom: 3px;
+  }
+  .person-box {
+    border: 1.5px solid #1E3A2F;
+    background: #FAF8F5;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin: 4px 0;
+    font-size: 11px;
+    box-shadow: 1px 1px 0 rgba(30,58,47,0.1);
+  }
+  .person-box strong {
+    display: block;
+    color: #1E3A2F;
+    font-size: 12px;
+    border-bottom: 1px dashed #B8860B;
+    padding-bottom: 3px;
+    margin-bottom: 4px;
+  }
+  .line {
+    margin: 2px 0;
+    color: #333;
+  }
+  .footer {
+    margin-top: 24px;
+    border-top: 2px solid #1E3A2F;
+    padding-top: 10px;
+    font-size: 11px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .badge {
+    background: #1E3A2F;
+    color: #FAF8F5;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .sheet { border: none; box-shadow: none; padding: 0; }
+    .no-print { display: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="no-print" style="background:#1E3A2F; color:#fff; padding:10px 16px; border-radius:6px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center;">
+      <span style="font-size:12px;"><strong>Archival Print Instructions:</strong> Press <code>Ctrl + P</code> or <code>Cmd + P</code> to print. Select Letter or A4 in Landscape mode. Use 32lb acid-free paper for 200+ year durability.</span>
+      <button onclick="window.print()" style="background:#B8860B; border:none; color:#fff; font-weight:bold; font-size:12px; padding:6px 14px; border-radius:4px; cursor:pointer;">Print Sheet Now</button>
+    </div>
+
+    <div class="header">
+      <div class="title">Archival 4-Generation Pedigree Chart</div>
+      <div class="subtitle">FamilyRootsHub.com &bull; Certified Archival Organization System (Ahnentafel Standard)</div>
+      <div class="meta-grid">
+        <div><strong>Compiler / Genealogist:</strong> __________________</div>
+        <div><strong>Date Begun:</strong> _________________</div>
+        <div><strong>Primary Line:</strong> ______________________</div>
+        <div><strong>Chart Number:</strong> 001</div>
+      </div>
+    </div>
+
+    <div class="tree-layout">
+      <!-- GEN 1 -->
+      <div class="gen-column">
+        <div class="gen-tag">Gen I: Subject</div>
+        <div class="person-box">
+          <strong>No. 1 &mdash; Person of Record</strong>
+          <div class="line">Born: _____________________</div>
+          <div class="line">At: _______________________</div>
+          <div class="line">Married: __________________</div>
+          <div class="line">To: _______________________</div>
+          <div class="line">Died: _____________________</div>
+          <div class="line">Buried: ___________________</div>
+        </div>
+      </div>
+
+      <!-- GEN 2 -->
+      <div class="gen-column">
+        <div class="gen-tag">Gen II: Parents</div>
+        <div class="person-box">
+          <strong>No. 2 &mdash; Father</strong>
+          <div class="line">Born: _____________________</div>
+          <div class="line">At: _______________________</div>
+          <div class="line">Married: __________________</div>
+          <div class="line">Died: _____________________</div>
+        </div>
+        <div class="person-box">
+          <strong>No. 3 &mdash; Mother (Maiden)</strong>
+          <div class="line">Born: _____________________</div>
+          <div class="line">At: _______________________</div>
+          <div class="line">Died: _____________________</div>
+        </div>
+      </div>
+
+      <!-- GEN 3 -->
+      <div class="gen-column">
+        <div class="gen-tag">Gen III: Grandparents</div>
+        <div class="person-box">
+          <strong>No. 4 &mdash; Pat. Grandfather</strong>
+          <div class="line">B: _________ D: _________</div>
+          <div class="line">At: _____________________</div>
+        </div>
+        <div class="person-box">
+          <strong>No. 5 &mdash; Pat. Grandmother</strong>
+          <div class="line">B: _________ D: _________</div>
+          <div class="line">Maiden: _________________</div>
+        </div>
+        <div class="person-box">
+          <strong>No. 6 &mdash; Mat. Grandfather</strong>
+          <div class="line">B: _________ D: _________</div>
+          <div class="line">At: _____________________</div>
+        </div>
+        <div class="person-box">
+          <strong>No. 7 &mdash; Mat. Grandmother</strong>
+          <div class="line">B: _________ D: _________</div>
+          <div class="line">Maiden: _________________</div>
+        </div>
+      </div>
+
+      <!-- GEN 4 -->
+      <div class="gen-column">
+        <div class="gen-tag">Gen IV: Great-Grandparents</div>
+        <div class="person-box" style="font-size:10px; padding:4px 6px;"><strong>8: Pat. G-GF:</strong> ________________</div>
+        <div class="person-box" style="font-size:10px; padding:4px 6px;"><strong>9: Pat. G-GM:</strong> ________________</div>
+        <div class="person-box" style="font-size:10px; padding:4px 6px;"><strong>10: Pat. G-GF:</strong> ________________</div>
+        <div class="person-box" style="font-size:10px; padding:4px 6px;"><strong>11: Pat. G-GM:</strong> ________________</div>
+        <div class="person-box" style="font-size:10px; padding:4px 6px;"><strong>12: Mat. G-GF:</strong> ________________</div>
+        <div class="person-box" style="font-size:10px; padding:4px 6px;"><strong>13: Mat. G-GM:</strong> ________________</div>
+        <div class="person-box" style="font-size:10px; padding:4px 6px;"><strong>14: Mat. G-GF:</strong> ________________</div>
+        <div class="person-box" style="font-size:10px; padding:4px 6px;"><strong>15: Mat. G-GM:</strong> ________________</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Standard Ahnentafel Root: Male = 2n, Female = 2n + 1. All records must cite primary repository sources.</div>
+      <div class="badge">ISO 11108 Certified Acid-Free Safe &bull; FamilyRootsHub.com</div>
+    </div>
+  </div>
+</body>
+</html>
