@@ -238,7 +238,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1200&q=80"
     ],
     badge: "Top Digital Choice",
-    gumroadUrl: "https://familyrootshub.gumroad.com/l/goodnotes-planner?wanted=true",
+    gumroadUrl: "https://familyrootshub.gumroad.com/l/heritage-tablet-planner?wanted=true",
   }
 ];
 
