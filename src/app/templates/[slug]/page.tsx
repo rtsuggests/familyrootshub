@@ -241,6 +241,9 @@ export default function GenericProductPage({ params }: ProductPageProps) {
 
         {/* FAQs */}
         <FaqAccordion items={PRODUCT_FAQS} />
+
+        {/* Sticky Checkout Bar on Scroll */}
+        <StickyCheckoutBar product={product} />
       </div>
     </>
   );

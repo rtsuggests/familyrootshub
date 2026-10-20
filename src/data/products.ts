@@ -132,7 +132,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80"
     ],
     badge: "Ultimate Value Bundle",
-    gumroadUrl: "https://familyrootshub.gumroad.com/l/master-heritage-vault?wanted=true",
+    gumroadUrl: "https://familyrootshub.gumroad.com/l/The-Master-Heritage?wanted=true",
   },
   {
     id: "census-extraction-worksheets",

@@ -9,7 +9,7 @@ import { Button } from "./Button";
 
 interface StickyCheckoutBarProps {
   product: Product;
-  onCheckout: () => void;
+  onCheckout?: () => void;
 }
 
 export const StickyCheckoutBar: React.FC<StickyCheckoutBarProps> = ({
