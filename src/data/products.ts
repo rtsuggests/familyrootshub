@@ -170,7 +170,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80"
     ],
     badge: "Essential for US Research",
-    gumroadUrl: "https://familyrootshub.gumroad.com/l/census-extraction?wanted=true",
+    gumroadUrl: "https://familyrootshub.gumroad.com/l/census-worksheets?wanted=true",
   },
   {
     id: "cemetery-vital-records-kit",
