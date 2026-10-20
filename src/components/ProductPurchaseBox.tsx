@@ -22,8 +22,9 @@ export const ProductPurchaseBox: React.FC<ProductPurchaseBoxProps> = ({ product 
       case "cemetery-vital-records-kit":
         return "/downloads/FamilyRootsHub-Cemetery-and-Vital-Records-Field-Dossier.pdf";
       case "master-heritage-vault":
+        return "/downloads/FamilyRootsHub-Master-Heritage-Vault-Complete.pdf";
       case "goodnotes-digital-planner":
-        return "/downloads/FamilyRootsHub-Master-Heritage-Vault-Guide.pdf";
+        return "/downloads/FamilyRootsHub-GoodNotes-Digital-Planner.pdf";
       case "free-starter-kit":
         return "/downloads/FamilyRootsHub-Free-Starter-Kit.pdf";
       default:
