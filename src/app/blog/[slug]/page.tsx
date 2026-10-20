@@ -190,7 +190,10 @@ export default function SingleBlogPostPage({ params }: BlogPageProps) {
               </div>
 
               {/* Introduction */}
-              <div className="p-5 sm:p-6 bg-cream-100 rounded-2xl border-l-4 border-forest-800 text-charcoal-800 text-sm sm:text-base leading-relaxed italic">
+              <div
+                data-ai-summary="true"
+                className="ai-summary p-5 sm:p-6 bg-cream-100 rounded-2xl border-l-4 border-forest-800 text-charcoal-800 text-sm sm:text-base leading-relaxed italic"
+              >
                 {article.content.introduction}
               </div>
 
@@ -216,7 +219,10 @@ export default function SingleBlogPostPage({ params }: BlogPageProps) {
 
                     {/* Optional Key Takeaway Callout */}
                     {section.keyTakeaway && (
-                      <div className="p-4 sm:p-5 bg-forest-900 text-cream-100 rounded-2xl border border-forest-800 space-y-1.5 shadow-sm">
+                      <div
+                        data-ai-summary="true"
+                        className="ai-summary p-4 sm:p-5 bg-forest-900 text-cream-100 rounded-2xl border border-forest-800 space-y-1.5 shadow-sm"
+                      >
                         <div className="flex items-center space-x-2 text-bronze-300 font-bold text-xs uppercase tracking-wider">
                           <Sparkles className="w-4 h-4 text-bronze-400" />
                           <span>Archival Key Takeaway</span>

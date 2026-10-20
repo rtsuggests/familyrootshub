@@ -176,12 +176,31 @@ export const OrganizationJsonLd: React.FC = () => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://familyrootshub.com/#organization",
     name: "FamilyRootsHub",
+    alternateName: "FamilyRootsHub Archival Media",
     url: "https://familyrootshub.com",
     logo: "https://familyrootshub.com/favicon.svg",
     description:
-      "Specialized Genealogy Templates & Organization Hub for archival family tree research, census extraction, and digital heritage planning.",
+      "Specialized Genealogy Templates & Organization Hub. Certified archival family history systems, decennial census extraction worksheets (1790-1950), and digital tablet planners.",
     email: "support@familyrootshub.com",
+    publishingPrinciples: "https://familyrootshub.com/about",
+    knowsAbout: [
+      "Ahnentafel Ancestral Numbering System",
+      "Genealogical Proof Standard (GPS)",
+      "United States Federal Decennial Population Censuses (1790-1950)",
+      "National Archives and Records Administration (NARA) transcription standards",
+      "Acid-free and lignin-free archival paper permanence (ISO 11108)",
+      "Cemetery epigraphy, plot cartography, and Victorian gravestone iconography",
+      "Paleography and 18th/19th century cursive handwriting transcription",
+      "GoodNotes and digital tablet genealogy planners"
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "support@familyrootshub.com",
+      contactType: "customer service",
+      availableLanguage: "en"
+    },
     sameAs: [
       "https://facebook.com/familyrootshub",
       "https://pinterest.com/familyrootshub",
@@ -201,10 +220,14 @@ export const WebSiteJsonLd: React.FC = () => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://familyrootshub.com/#website",
     name: "FamilyRootsHub",
     url: "https://familyrootshub.com",
     description:
       "Turn centuries of family clutter into an organized heritage vault with archival genealogy binders, census extraction worksheets, and digital planners.",
+    publisher: {
+      "@id": "https://familyrootshub.com/#organization",
+    },
     potentialAction: {
       "@type": "SearchAction",
       target: {
@@ -248,15 +271,30 @@ export const ArticleJsonLd: React.FC<ArticleJsonLdProps> = ({
     image: [image],
     datePublished: datePublished,
     dateModified: datePublished,
+    isPartOf: {
+      "@type": "WebSite",
+      "@id": "https://familyrootshub.com/#website",
+    },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [
+        "h1",
+        "[data-ai-summary]",
+        ".ai-summary",
+        "article p:first-of-type"
+      ],
+    },
     author: [
       {
         "@type": "Person",
         name: authorName,
         url: "https://familyrootshub.com/about",
+        jobTitle: "Genealogical Researcher & Archival Specialist",
       },
     ],
     publisher: {
       "@type": "Organization",
+      "@id": "https://familyrootshub.com/#organization",
       name: "FamilyRootsHub",
       logo: {
         "@type": "ImageObject",

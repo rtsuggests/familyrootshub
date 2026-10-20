@@ -78,6 +78,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM Context File" />
         <OrganizationJsonLd />
       </head>
       <body>
