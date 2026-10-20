@@ -204,7 +204,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80"
     ],
     badge: "Field Research",
-    gumroadUrl: "https://familyrootshub.gumroad.com/l/cemetery-kit?wanted=true",
+    gumroadUrl: "https://familyrootshub.gumroad.com/l/cemetery-vital-records?wanted=true",
   },
   {
     id: "goodnotes-digital-planner",
