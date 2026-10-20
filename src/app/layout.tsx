@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { ClientLayout } from "@/components/ClientLayout";
 import { OrganizationJsonLd } from "@/components/JsonLd";
@@ -80,6 +81,10 @@ export default function RootLayout({
         <OrganizationJsonLd />
       </head>
       <body>
+        <Script
+          src="https://gumroad.com/js/gumroad.js"
+          strategy="afterInteractive"
+        />
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

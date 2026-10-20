@@ -89,15 +89,34 @@ export const StickyCheckoutBar: React.FC<StickyCheckoutBarProps> = ({
             </div>
           </div>
 
-          <Button
-            onClick={onCheckout}
-            variant="secondary"
-            size="md"
-            className="shadow-lg hover:shadow-xl shrink-0"
-            leftIcon={<ShoppingBag className="w-4 h-4" />}
-          >
-            <span>Get Instant Access</span>
-          </Button>
+          {product.gumroadUrl ? (
+            <a
+              href={product.gumroadUrl}
+              className="gumroad-button shrink-0"
+              data-gumroad-single-product="true"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="secondary"
+                size="md"
+                className="shadow-lg hover:shadow-xl shrink-0"
+                leftIcon={<ShoppingBag className="w-4 h-4" />}
+              >
+                <span>Get Instant Access</span>
+              </Button>
+            </a>
+          ) : (
+            <Button
+              onClick={onCheckout}
+              variant="secondary"
+              size="md"
+              className="shadow-lg hover:shadow-xl shrink-0"
+              leftIcon={<ShoppingBag className="w-4 h-4" />}
+            >
+              <span>Get Instant Access</span>
+            </Button>
+          )}
         </div>
       </div>
     </aside>

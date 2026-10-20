@@ -285,36 +285,22 @@ export default function GenealogyResearchBinderPage() {
 
                 {/* Purchase Button & Guaranteed Badges */}
                 <div className="space-y-3 pt-2">
-                  {!checkoutSuccess ? (
+                  <a
+                    href="https://familyrootshub.gumroad.com/l/research-binder?wanted=true"
+                    className="gumroad-button block w-full"
+                    data-gumroad-single-product="true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Button
-                      onClick={handleCheckout}
                       variant="secondary"
                       size="xl"
-                      isLoading={isCheckingOut}
                       className="w-full shadow-lg"
                       leftIcon={<ShoppingBag className="w-5 h-5 text-forest-950" />}
                     >
                       <span>Buy Instant Access &bull; ${product.price}</span>
                     </Button>
-                  ) : (
-                    <div className="bg-forest-100 border border-forest-300 p-5 rounded-xl text-center space-y-3">
-                      <div className="flex items-center justify-center space-x-2 text-forest-900 font-bold text-sm">
-                        <CheckCircle2 className="w-5 h-5 text-forest-800" />
-                        <span>Order Confirmed! Vault Unlocked</span>
-                      </div>
-                      <p className="text-xs text-charcoal-700">
-                        Thank you for investing in your family heritage. Your complete 35-page archival binder package is ready for instant download:
-                      </p>
-                      <a
-                        href="/downloads/FamilyRootsHub-35-Page-Research-Binder.pdf"
-                        download="FamilyRootsHub-35-Page-Research-Binder.pdf"
-                        className="inline-flex items-center justify-center w-full bg-forest-800 hover:bg-forest-700 text-cream-50 font-bold text-xs py-3 px-4 rounded-xl shadow-md transition-all space-x-2"
-                      >
-                        <Download className="w-4 h-4 text-bronze-300" />
-                        <span>Download 35-Page Master Binder (PDF)</span>
-                      </a>
-                    </div>
-                  )}
+                  </a>
 
                   <div className="flex items-center justify-center space-x-4 text-[11px] text-charcoal-500 pt-1">
                     <span className="flex items-center">
@@ -460,16 +446,22 @@ export default function GenealogyResearchBinderPage() {
               Instant digital delivery. Print as many copies as you need for your entire family tree. Covered by our 30-day archival money-back guarantee.
             </p>
             <div className="pt-2">
-              <Button
-                onClick={handleCheckout}
-                variant="secondary"
-                size="xl"
-                isLoading={isCheckingOut}
-                leftIcon={<ShoppingBag className="w-5 h-5 text-forest-950" />}
-                className="shadow-vault"
+              <a
+                href="https://familyrootshub.gumroad.com/l/research-binder?wanted=true"
+                className="gumroad-button inline-block"
+                data-gumroad-single-product="true"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Get Instant Access Now &bull; $14
-              </Button>
+                <Button
+                  variant="secondary"
+                  size="xl"
+                  leftIcon={<ShoppingBag className="w-5 h-5 text-forest-950" />}
+                  className="shadow-vault"
+                >
+                  Get Instant Access Now &bull; $14
+                </Button>
+              </a>
             </div>
           </div>
         </section>

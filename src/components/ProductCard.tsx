@@ -146,6 +146,22 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                   Download Free
                 </Button>
               </Link>
+            ) : product.gumroadUrl ? (
+              <a
+                href={product.gumroadUrl}
+                className="gumroad-button"
+                data-gumroad-single-product="true"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant={featured ? "secondary" : "primary"}
+                  size="sm"
+                  leftIcon={<ShoppingBag className="w-3.5 h-3.5" />}
+                >
+                  Get Access
+                </Button>
+              </a>
             ) : (
               <Button
                 onClick={() => {

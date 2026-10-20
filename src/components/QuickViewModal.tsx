@@ -147,6 +147,23 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                       Download Free Kit
                     </Button>
                   </Link>
+                ) : product.gumroadUrl ? (
+                  <a
+                    href={product.gumroadUrl}
+                    className="gumroad-button w-full"
+                    data-gumroad-single-product="true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      variant="primary"
+                      size="md"
+                      className="w-full"
+                      leftIcon={<ShoppingBag className="w-4 h-4" />}
+                    >
+                      Buy Instant Download &bull; {formatPrice(product.price)}
+                    </Button>
+                  </a>
                 ) : (
                   <Button
                     onClick={() => {

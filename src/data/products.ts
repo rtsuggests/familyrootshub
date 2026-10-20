@@ -36,6 +36,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80"
     ],
     badge: "100% Free Download",
+    gumroadUrl: "https://familyrootshub.gumroad.com/l/free-starter-kit?wanted=true",
   },
   {
     id: "genealogy-research-binder",
@@ -92,6 +93,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=1200&q=80"
     ],
     badge: "Bestseller — Save 52%",
+    gumroadUrl: "https://familyrootshub.gumroad.com/l/research-binder?wanted=true",
   },
   {
     id: "master-heritage-vault",
@@ -130,6 +132,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80"
     ],
     badge: "Ultimate Value Bundle",
+    gumroadUrl: "https://familyrootshub.gumroad.com/l/master-heritage-vault?wanted=true",
   },
   {
     id: "census-extraction-worksheets",
@@ -167,6 +170,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80"
     ],
     badge: "Essential for US Research",
+    gumroadUrl: "https://familyrootshub.gumroad.com/l/census-extraction?wanted=true",
   },
   {
     id: "cemetery-vital-records-kit",
@@ -200,6 +204,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80"
     ],
     badge: "Field Research",
+    gumroadUrl: "https://familyrootshub.gumroad.com/l/cemetery-kit?wanted=true",
   },
   {
     id: "goodnotes-digital-planner",
@@ -233,6 +238,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1200&q=80"
     ],
     badge: "Top Digital Choice",
+    gumroadUrl: "https://familyrootshub.gumroad.com/l/goodnotes-planner?wanted=true",
   }
 ];
 

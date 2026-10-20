@@ -61,7 +61,24 @@ export const ProductPurchaseBox: React.FC<ProductPurchaseBoxProps> = ({ product 
 
   return (
     <div className="space-y-3 pt-2">
-      {!isPurchased ? (
+      {product.gumroadUrl ? (
+        <a
+          href={product.gumroadUrl}
+          className="gumroad-button block w-full"
+          data-gumroad-single-product="true"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button
+            variant="secondary"
+            size="xl"
+            className="w-full shadow-lg"
+            leftIcon={<ShoppingBag className="w-5 h-5 text-forest-950" />}
+          >
+            <span>Buy Instant Access &bull; {formatPrice(product.price)}</span>
+          </Button>
+        </a>
+      ) : !isPurchased ? (
         <Button
           onClick={handleCheckout}
           variant="secondary"

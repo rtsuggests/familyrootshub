@@ -26,6 +26,7 @@ export interface Product {
   galleryImages: string[];
   badge?: string;
   checkoutUrl?: string;
+  gumroadUrl?: string;
 }
 
 export interface Testimonial {

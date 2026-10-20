@@ -245,36 +245,22 @@ export default function FreeStarterKitPage() {
 
               {/* Action */}
               <div className="pt-3">
-                {!upgradeSuccess ? (
+                <a
+                  href="https://familyrootshub.gumroad.com/l/research-binder?wanted=true"
+                  className="gumroad-button block w-full"
+                  data-gumroad-single-product="true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
-                    onClick={handleUpgradeCheckout}
                     variant="secondary"
                     size="lg"
-                    isLoading={isUpgrading}
                     className="w-full shadow-lg"
                     leftIcon={<ShoppingBag className="w-5 h-5 text-forest-950" />}
                   >
-                    <span>Yes! Add the 35-Page Master Kit for Only $9 &rarr;</span>
+                    <span>Yes! Add the 35-Page Master Kit &rarr;</span>
                   </Button>
-                ) : (
-                  <div className="bg-forest-800 border border-bronze-400 p-5 rounded-xl text-center space-y-3">
-                    <div className="flex items-center justify-center space-x-2 text-bronze-300 font-bold text-sm">
-                      <CheckCircle2 className="w-5 h-5 text-bronze-400" />
-                      <span>Upgrade Complete! Access Granted</span>
-                    </div>
-                    <p className="text-xs text-cream-200">
-                      Your 40% discount was applied. You can download the complete 35-Page Master Archival Binder PDF immediately below:
-                    </p>
-                    <a
-                      href="/downloads/FamilyRootsHub-35-Page-Research-Binder.pdf"
-                      download="FamilyRootsHub-35-Page-Research-Binder.pdf"
-                      className="inline-flex items-center justify-center w-full bg-bronze-500 hover:bg-bronze-600 text-forest-950 font-bold text-xs py-3 px-4 rounded-xl shadow-md transition-all space-x-2"
-                    >
-                      <Download className="w-4 h-4" />
-                      <span>Download 35-Page Master Binder (PDF)</span>
-                    </a>
-                  </div>
-                )}
+                </a>
 
                 <div className="mt-2 text-center text-[11px] text-charcoal-400 flex items-center justify-center space-x-2">
                   <ShieldCheck className="w-3.5 h-3.5 text-bronze-400" />
