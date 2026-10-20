@@ -32,7 +32,9 @@ interface ProductPageProps {
 }
 
 export function generateStaticParams() {
-  return PRODUCTS.filter((p) => p.slug !== "genealogy-research-binder").map((product) => ({
+  return PRODUCTS.filter(
+    (p) => p.slug !== "genealogy-research-binder" && p.slug !== "free-starter-kit"
+  ).map((product) => ({
     slug: product.slug,
   }));
 }

@@ -29,7 +29,7 @@ import { QuickViewModal } from "@/components/QuickViewModal";
 import { CousinCalculator } from "@/components/CousinCalculator";
 import { ArchivalGearGrid } from "@/components/ArchivalGearGrid";
 import { FaqAccordion } from "@/components/FaqAccordion";
-import { FaqJsonLd } from "@/components/JsonLd";
+import { FaqJsonLd, WebSiteJsonLd, ItemListJsonLd } from "@/components/JsonLd";
 import { useModal } from "@/components/ModalContext";
 import { FEATURED_PRODUCTS, PRODUCTS } from "@/data/products";
 import { TESTIMONIALS } from "@/data/testimonials";
@@ -103,7 +103,17 @@ export default function HomePage() {
 
   return (
     <>
+      <WebSiteJsonLd />
       <FaqJsonLd faqs={HOMEPAGE_FAQS} />
+      <ItemListJsonLd
+        name="Featured Archival Genealogy Systems"
+        description="Certified archival printable pedigree charts, research binders, and digital planners."
+        items={FEATURED_PRODUCTS.map((p, idx) => ({
+          name: p.name,
+          url: p.slug === "free-starter-kit" ? "https://familyrootshub.com/free-starter-kit" : `https://familyrootshub.com/templates/${p.slug}`,
+          position: idx + 1,
+        }))}
+      />
 
       {/* Quick View Modal */}
       <QuickViewModal
