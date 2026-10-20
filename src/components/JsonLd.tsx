@@ -110,12 +110,63 @@ export const OrganizationJsonLd: React.FC = () => {
     "@type": "Organization",
     name: "FamilyRootsHub",
     url: "https://familyrootshub.com",
-    logo: "https://familyrootshub.com/logo.png",
+    logo: "https://familyrootshub.com/favicon.svg",
     description: "Specialized Genealogy Templates & Organization Hub for archival family tree research.",
     sameAs: [
       "https://facebook.com/familyrootshub",
       "https://pinterest.com/familyrootshub",
     ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+};
+
+interface ArticleJsonLdProps {
+  title: string;
+  description: string;
+  url: string;
+  image: string;
+  datePublished: string;
+  authorName: string;
+}
+
+export const ArticleJsonLd: React.FC<ArticleJsonLdProps> = ({
+  title,
+  description,
+  url,
+  image,
+  datePublished,
+  authorName,
+}) => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description: description,
+    image: [image],
+    datePublished: datePublished,
+    dateModified: datePublished,
+    author: {
+      "@type": "Person",
+      name: authorName,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "FamilyRootsHub",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://familyrootshub.com/favicon.svg",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
   };
 
   return (

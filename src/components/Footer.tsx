@@ -106,6 +106,12 @@ export const Footer: React.FC = () => {
             </h5>
             <ul className="space-y-2 text-sm text-charcoal-300">
               <li>
+                <Link href="/blog" className="hover:text-cream-100 transition-colors flex items-center font-medium text-bronze-300">
+                  <span>Blog & Archival Guides</span>
+                  <ArrowUpRight className="w-3 h-3 ml-1" />
+                </Link>
+              </li>
+              <li>
                 <Link href="/#cousin-calculator" className="hover:text-cream-100 transition-colors">
                   Interactive Cousin Calculator
                 </Link>
@@ -136,11 +142,30 @@ export const Footer: React.FC = () => {
           {/* Trust & Legal */}
           <div className="space-y-3">
             <h5 className="font-serif text-sm font-semibold tracking-wider text-bronze-300 uppercase">
-              Archival Standards
+              Trust & Legal
             </h5>
-            <p className="text-xs text-charcoal-300 leading-normal">
-              All forms adhere to ISO 11108 archival permanence conventions, Ahnentafel ancestral numbering, and US National Archives (NARA) transcription protocols.
-            </p>
+            <ul className="space-y-2 text-sm text-charcoal-300">
+              <li>
+                <Link href="/privacy" className="hover:text-cream-100 transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="hover:text-cream-100 transition-colors">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link href="/disclaimer" className="hover:text-cream-100 transition-colors">
+                  Affiliate & Ad Disclaimer
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-cream-100 transition-colors">
+                  Contact Support Team
+                </Link>
+              </li>
+            </ul>
             <div className="pt-2 text-xs text-charcoal-400 space-y-1">
               <p>Support: <a href="mailto:support@familyrootshub.com" className="underline hover:text-cream-100">support@familyrootshub.com</a></p>
               <p>Hours: Mon–Fri, 9am–5pm EST</p>
@@ -150,11 +175,20 @@ export const Footer: React.FC = () => {
 
         {/* Affiliate Disclosure & Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-forest-900 flex flex-col md:flex-row items-center justify-between text-xs text-charcoal-400 gap-4">
-          <p>
-            &copy; {new Date().getFullYear()} FamilyRootsHub.com. All rights reserved.
-          </p>
+          <div className="space-y-1 text-center md:text-left">
+            <p>&copy; {new Date().getFullYear()} FamilyRootsHub.com. All rights reserved.</p>
+            <div className="flex flex-wrap items-center justify-center md:justify-start space-x-3 text-[11px] text-charcoal-400">
+              <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
+              <span>&bull;</span>
+              <Link href="/terms" className="hover:underline">Terms of Service</Link>
+              <span>&bull;</span>
+              <Link href="/disclaimer" className="hover:underline">Disclaimer</Link>
+              <span>&bull;</span>
+              <Link href="/contact" className="hover:underline">Contact Us</Link>
+            </div>
+          </div>
           <p className="text-center md:text-right max-w-xl text-[11px] text-charcoal-400">
-            <strong>Affiliate Disclosure:</strong> FamilyRootsHub is reader-supported. When you purchase recommended archival pens, paper, or binders through our links, we may earn an affiliate commission at no extra cost to you.
+            <strong>Affiliate & Ad Disclosure:</strong> FamilyRootsHub is reader-supported and Google AdSense compliant. When you purchase recommended archival pens, paper, or binders through our links, we may earn an affiliate commission at no extra cost to you.
           </p>
         </div>
       </div>

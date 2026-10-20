@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { TreePine, Menu, X, Download, BookOpen, Calculator, Sparkles, Compass } from "lucide-react";
+import { TreePine, Menu, X, Download, BookOpen, Calculator, Sparkles, Compass, Newspaper } from "lucide-react";
 import { Button } from "./Button";
 import { cn } from "@/lib/utils";
 
@@ -31,6 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenLeadModal }) => {
   const navLinks = [
     { name: "Template Catalog", href: "/templates", icon: BookOpen },
     { name: "35-Page Binder", href: "/templates/genealogy-research-binder", icon: Sparkles, badge: "Flagship" },
+    { name: "Blog / Guides", href: "/blog", icon: Newspaper },
     { name: "Cousin Calculator", href: "/#cousin-calculator", icon: Calculator },
     { name: "Archival Standards", href: "/about", icon: Compass },
     { name: "Free Kit (PDF)", href: "/free-starter-kit", icon: Download, highlight: true },
