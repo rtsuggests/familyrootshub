@@ -4,60 +4,62 @@ import { BLOG_ARTICLES } from "@/data/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://familyrootshub.com";
+  // W3C date-only format (YYYY-MM-DD) without milliseconds for 100% Google Search Console compatibility
+  const currentDate = new Date().toISOString().split("T")[0];
 
   // Core Static Landing & Compliance Pages
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: `${baseUrl}`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "daily",
       priority: 1.0,
     },
     {
       url: `${baseUrl}/templates`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "daily",
       priority: 0.95,
     },
     {
       url: `${baseUrl}/free-starter-kit`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.95,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "daily",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/contact`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/privacy`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "yearly",
       priority: 0.4,
     },
     {
       url: `${baseUrl}/terms`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "yearly",
       priority: 0.4,
     },
     {
       url: `${baseUrl}/disclaimer`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "yearly",
       priority: 0.4,
     },
@@ -69,7 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     (p) => p.slug !== "free-starter-kit"
   ).map((product) => ({
     url: `${baseUrl}/templates/${product.slug}`,
-    lastModified: new Date(),
+    lastModified: currentDate,
     changeFrequency: "weekly",
     priority: product.id === "genealogy-research-binder" ? 0.95 : 0.9,
   }));
@@ -77,7 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // All 6 Authoritative Blog Articles
   const blogPages: MetadataRoute.Sitemap = BLOG_ARTICLES.map((article) => ({
     url: `${baseUrl}/blog/${article.slug}`,
-    lastModified: new Date(article.isoDate),
+    lastModified: article.isoDate.split("T")[0],
     changeFrequency: "monthly",
     priority: 0.85,
   }));
