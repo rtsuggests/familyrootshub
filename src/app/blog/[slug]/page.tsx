@@ -45,13 +45,14 @@ export function generateMetadata({ params }: BlogPageProps): Metadata {
   }
 
   const url = `https://familyrootshub.com/blog/${article.slug}`;
+  const seoTitle = article.shortTitle || article.title;
 
   return {
-    title: `${article.title} | FamilyRootsHub`,
+    title: seoTitle,
     description: article.metaDescription,
     keywords: article.keywords,
     openGraph: {
-      title: `${article.title} | FamilyRootsHub`,
+      title: `${seoTitle} | FamilyRootsHub`,
       description: article.metaDescription,
       url: url,
       type: "article",
@@ -68,7 +69,7 @@ export function generateMetadata({ params }: BlogPageProps): Metadata {
     },
     twitter: {
       card: "summary_large_image",
-      title: article.title,
+      title: seoTitle,
       description: article.metaDescription,
       images: [article.coverImage],
     },
@@ -185,6 +186,7 @@ export default function SingleBlogPostPage({ params }: BlogPageProps) {
                   alt={article.title}
                   fill
                   priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 65vw"
                   className="object-cover"
                 />
               </div>
@@ -352,8 +354,6 @@ export default function SingleBlogPostPage({ params }: BlogPageProps) {
                     href={article.relatedProduct.gumroadUrl}
                     className="gumroad-button block w-full"
                     data-gumroad-single-product="true"
-                    target="_blank"
-                    rel="noopener noreferrer"
                   >
                     <Button
                       variant="secondary"

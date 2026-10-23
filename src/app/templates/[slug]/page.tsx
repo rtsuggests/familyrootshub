@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { PRODUCTS } from "@/data/products";
 import { PRODUCT_FAQS } from "@/data/faqs";
+import { PRODUCT_EDUCATIONAL_CONTENT } from "@/data/productEducationalContent";
 import { formatPrice } from "@/lib/utils";
 import { Button } from "@/components/Button";
 import { FaqAccordion } from "@/components/FaqAccordion";
@@ -47,11 +48,18 @@ export function generateMetadata({ params }: ProductPageProps): Metadata {
     };
   }
 
+  const cleanTitle =
+    product.slug === "census-extraction-worksheets"
+      ? "Census Extraction Worksheets (1790–1950)"
+      : product.slug === "goodnotes-digital-planner"
+      ? "Heritage Tablet Digital Planner"
+      : product.name;
+
   return {
-    title: `${product.name} — Archival Genealogy Template`,
+    title: cleanTitle,
     description: product.shortDescription,
     openGraph: {
-      title: `${product.name} | FamilyRootsHub`,
+      title: `${cleanTitle} | FamilyRootsHub`,
       description: product.shortDescription,
       images: [product.coverImage],
     },
@@ -114,6 +122,7 @@ export default function GenericProductPage({ params }: ProductPageProps) {
                     alt={product.name}
                     fill
                     priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 50vw"
                     className="object-cover"
                   />
                   {product.badge && (
@@ -240,6 +249,57 @@ export default function GenericProductPage({ params }: ProductPageProps) {
             </div>
           </div>
         </section>
+
+        {/* Educational Deep-Dive & Archival Methodology (E-E-A-T) */}
+        {PRODUCT_EDUCATIONAL_CONTENT[product.slug] && (
+          <section className="py-14 sm:py-20 border-t border-b border-sepiaBorder bg-cream-50">
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+              <div className="max-w-3xl space-y-3">
+                <div className="inline-flex items-center space-x-2 bg-bronze-100 text-bronze-800 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-bronze-200">
+                  <ShieldCheck className="w-3.5 h-3.5 text-bronze-700" />
+                  <span>{PRODUCT_EDUCATIONAL_CONTENT[product.slug].standardsBadge}</span>
+                </div>
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-forest-900 leading-tight">
+                  {PRODUCT_EDUCATIONAL_CONTENT[product.slug].title}
+                </h2>
+                <p className="text-sm font-medium text-bronze-700 italic">
+                  {PRODUCT_EDUCATIONAL_CONTENT[product.slug].subtitle}
+                </p>
+                <p className="text-sm sm:text-base text-charcoal-700 leading-relaxed pt-2">
+                  {PRODUCT_EDUCATIONAL_CONTENT[product.slug].methodologyOverview}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-2">
+                {PRODUCT_EDUCATIONAL_CONTENT[product.slug].principles.map((principle, idx) => (
+                  <div
+                    key={idx}
+                    className="bg-cream-100 p-6 sm:p-7 rounded-2xl border border-sepiaBorder shadow-sm space-y-3"
+                  >
+                    <h3 className="font-serif text-lg font-bold text-forest-900 leading-snug">
+                      {principle.heading}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-charcoal-700 leading-relaxed font-sans">
+                      {principle.body}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="p-5 bg-forest-900 text-cream-100 rounded-2xl border border-forest-800 text-xs sm:text-sm leading-relaxed flex items-start space-x-3.5 shadow-vault">
+                <Sparkles className="w-5 h-5 text-bronze-300 shrink-0 mt-0.5" />
+                <div>
+                  <strong className="text-cream-50 block font-serif text-sm mb-1">
+                    Archival Material Calibration:
+                  </strong>
+                  <span className="text-charcoal-200">
+                    {PRODUCT_EDUCATIONAL_CONTENT[product.slug].archivalNotes}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* FAQs */}
         <FaqAccordion items={PRODUCT_FAQS} />

@@ -9,9 +9,9 @@ const product = PRODUCTS.find((p) => p.id === "genealogy-research-binder")!;
 const pageUrl = "https://familyrootshub.com/templates/genealogy-research-binder";
 
 export const metadata: Metadata = {
-  title: "35-Page Master Genealogy Research Binder (Printable PDF) — FamilyRootsHub",
+  title: "35-Page Printable Research Binder",
   description:
-    "Download the archival 35-page physical genealogy research binder system. Includes 5-generation pedigree charts, family group sheets, census extraction grids (1790-1950), and Ahnentafel tab dividers.",
+    "Download the archival 35-page genealogy binder. Features 5-generation pedigree charts, family group sheets, and census extraction grids.",
   keywords: [
     "genealogy research binder",
     "printable pedigree charts",

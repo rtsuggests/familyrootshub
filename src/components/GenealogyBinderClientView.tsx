@@ -166,6 +166,7 @@ export const GenealogyBinderClientView: React.FC = () => {
                     alt="35-Page Genealogy Research Binder Preview"
                     fill
                     priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 50vw"
                     className="object-cover transition-all duration-300"
                   />
                   <div className="absolute top-4 left-4 flex space-x-2">
@@ -283,8 +284,6 @@ export const GenealogyBinderClientView: React.FC = () => {
                     href="https://familyrootshub.gumroad.com/l/research-binder?wanted=true"
                     className="gumroad-button block w-full"
                     data-gumroad-single-product="true"
-                    target="_blank"
-                    rel="noopener noreferrer"
                   >
                     <Button
                       variant="secondary"
@@ -369,6 +368,32 @@ export const GenealogyBinderClientView: React.FC = () => {
                 </p>
                 <p>
                   Pre-1850 tick marks for free white males and females are categorized cleanly; 1880 through 1920 Soundex, citizenship status, and mother-tongue columns align precisely with National Archives standards.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="font-serif font-bold text-base text-forest-900 flex items-center">
+                  <Award className="w-4 h-4 text-bronze-600 mr-2" />
+                  3. Elizabeth Shown Mills Evidence Framework
+                </h3>
+                <p>
+                  Built in strict accordance with Elizabeth Shown Mills&apos; seminal <em>Evidence Explained</em> standard. Our primary document extraction sheets require researchers to distinguish between original source artifacts versus derivative compilations, primary information from eyewitnesses versus secondary accounts, and direct proof versus circumstantial clues.
+                </p>
+                <p>
+                  This eliminates the proliferation of genealogical errors, ensures cross-verification of conflicting death dates, and creates an audit trail that academic lineage societies (DAR, SAR, Mayflower Society) can immediately verify.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="font-serif font-bold text-base text-forest-900 flex items-center">
+                  <ShieldCheck className="w-4 h-4 text-bronze-600 mr-2" />
+                  4. ISO 11108 Archival Permanence & Gutter Engineering
+                </h3>
+                <p>
+                  Standard pulp printer paper deteriorates within decades due to residual sulfuric acid. All 35 sheets in this binder are calibrated with fine-gauge vector line weights optimized for 28lb–32lb acid-free, lignin-free alkaline-buffered paper (ISO 11108 standards).
+                </p>
+                <p>
+                  Furthermore, each sheet includes an engineered 0.75-inch inner gutter margin. Standard 3-hole punches and heavy D-ring binder hardware will never punch through ancestor birth dates, marriage certificates, or source citation notes.
                 </p>
               </div>
             </div>

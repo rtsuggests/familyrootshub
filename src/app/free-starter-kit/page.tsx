@@ -8,9 +8,9 @@ const freeProduct = PRODUCTS.find((p) => p.slug === "free-starter-kit")!;
 const pageUrl = "https://familyrootshub.com/free-starter-kit";
 
 export const metadata: Metadata = {
-  title: "Free 4-Generation Pedigree Starter Kit & Research Log (PDF) — FamilyRootsHub",
+  title: "Free 4-Generation Pedigree Starter Kit",
   description:
-    "Download your complimentary 4-generation pedigree chart, research extraction log, and oral history interview questionnaire. 100% free instant PDF download for family historians.",
+    "Download your free 4-generation pedigree chart, research extraction log, and oral history interview questionnaire. Instant PDF download.",
   keywords: [
     "free pedigree chart pdf",
     "free genealogy starter kit",

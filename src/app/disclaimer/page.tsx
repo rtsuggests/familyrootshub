@@ -4,9 +4,9 @@ import Link from "next/link";
 import { AlertCircle, HelpCircle, ShieldAlert, Award } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Disclaimer & Affiliate Disclosure — FamilyRootsHub",
+  title: "Disclaimer & Disclosure",
   description:
-    "Official FTC affiliate disclosure, archival research disclaimer, and educational purpose statement for FamilyRootsHub.com.",
+    "Official FTC affiliate disclosure, archival research disclaimer, and educational purpose statement for FamilyRootsHub.",
   openGraph: {
     title: "Disclaimer & Affiliate Disclosure | FamilyRootsHub",
     description: "Read our full FTC affiliate disclosure and genealogical research disclaimer.",

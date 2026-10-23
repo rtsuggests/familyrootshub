@@ -7,6 +7,7 @@ export interface BlogAuthor {
 export interface BlogArticle {
   slug: string;
   title: string;
+  shortTitle?: string;
   tagline: string;
   excerpt: string;
   category: string;
@@ -50,6 +51,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
   {
     slug: "organize-genealogy-research-binder",
     title: "How to Build an Acid-Free Genealogy Research Binder (Archival Step-by-Step)",
+    shortTitle: "Organize Genealogy Papers in a Binder",
     tagline: "The proven archival method to preserve multi-generational certificates, census extracts, and pedigree charts for centuries.",
     excerpt: "Stop letting fragile certificates and handwritten notes degrade in cardboard boxes. Learn the museum-grade archival protocol for assembling a physical 3-ring genealogy research binder with acid-free paper, Mylar sleeves, and Ahnentafel tab dividers.",
     category: "Archival Preservation",
@@ -62,7 +64,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
     },
     coverImage: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
-    metaDescription: "Learn how to build a museum-grade archival genealogy research binder. Step-by-step guidance on acid-free paper, Mylar D sleeves, Ahnentafel numbering, and document preservation.",
+    metaDescription: "Step-by-step guide to organizing family history papers in an acid-free 3-ring binder using Ahnentafel numbering and archival Mylar sleeves.",
     keywords: [
       "genealogy research binder",
       "archival family history organization",
@@ -171,6 +173,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
   {
     slug: "ahnentafel-numbering-system-guide",
     title: "Mastering the Ahnentafel Numbering System: The Genealogist's Compass",
+    shortTitle: "Ahnentafel Numbering System Guide",
     tagline: "How mathematical doubling unlocks foolproof lineage indexing, parent-child calculation, and cross-generation clarity.",
     excerpt: "Confused by how to organize thousands of direct ancestors without losing track of maternal branches? Discover the Ahnentafel numbering system—the mathematical standard that makes tracking your ancestry effortless.",
     category: "Genealogy Systems",
@@ -183,7 +186,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
     },
     coverImage: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80",
-    metaDescription: "Master the Ahnentafel genealogical numbering system. Learn formulas for calculating parents and children, even vs odd rules, generation brackets, and practical chart setups.",
+    metaDescription: "Master the Ahnentafel genealogical numbering system. Learn mathematical doubling formulas, even vs. odd rules, and chart numbering.",
     keywords: [
       "Ahnentafel numbering system",
       "genealogy numbering method",
@@ -300,6 +303,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
   {
     slug: "how-to-read-us-census-records",
     title: "How to Read & Transcribe US Federal Census Records (1790–1950)",
+    shortTitle: "How to Read US Census Records",
     tagline: "Uncover hidden ancestral clues, overcome terrible handwriting, and master decennial schedules.",
     excerpt: "Struggling to decipher faded enumerator handwriting or confusing tick-mark columns in pre-1850 censuses? Discover the definitive methodology for extracting every piece of genealogical gold from US Federal Census schedules.",
     category: "Census Extractors",
@@ -312,7 +316,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
     },
     coverImage: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
-    metaDescription: "Step-by-step tutorial on transcribing US Federal Census records from 1790 to 1950. Deciphering tick marks, Soundex codes, 1950 supplemental questions, and avoiding false positives.",
+    metaDescription: "Learn how to read and transcribe US Federal Census records from 1790 to 1950. Decipher tick marks, Soundex codes, and avoid errors.",
     keywords: [
       "how to read us census records",
       "census extraction worksheets",
@@ -411,6 +415,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
   {
     slug: "cemetery-field-research-grave-symbols",
     title: "Cemetery Field Research Guide: Decoding Gravestone Symbols & Epigraphy",
+    shortTitle: "Cemetery Research & Gravestone Symbols",
     tagline: "Uncover secret fraternal emblems, Victorian mourning motifs, and courthouse cross-checks in historic graveyards.",
     excerpt: "Heading out on a cemetery research expedition? Learn how to ethically transcribe weathered headstones, decode cryptic fraternal and Victorian carvings, and map family burial clusters without damaging delicate marble.",
     category: "Field Research",
@@ -423,7 +428,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
     },
     coverImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
-    metaDescription: "The ultimate guide to cemetery genealogy research. Learn how to decode gravestone symbols (willows, anchors, Masonic emblems), transcribe epigraphy safely, and map cemetery plots.",
+    metaDescription: "Decode gravestone symbols, transcribe weathered epitaphs safely, and map cemetery plots using ethical conservation standards.",
     keywords: [
       "cemetery field research genealogy",
       "gravestone symbol meanings",
@@ -530,6 +535,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
   {
     slug: "digital-genealogy-planner-ipad-goodnotes",
     title: "Paperless Family History: The Ultimate GoodNotes & iPad Genealogy Workflow",
+    shortTitle: "iPad & GoodNotes Digital Genealogy Guide",
     tagline: "How to carry 500 ancestors, hyperlinked pedigree charts, and digital sticker archives on an iPad.",
     excerpt: "Tired of lugging heavy three-ring binders to state archives and family reunions? Discover how to build a paperless, hyperlinked digital genealogy vault on your iPad using GoodNotes, Apple Pencil, and cloud syncing.",
     category: "Digital Planning",
@@ -542,7 +548,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
     },
     coverImage: "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1200&q=80",
-    metaDescription: "A complete guide to paperless digital genealogy on iPad and GoodNotes 6. Learn how hyperlinked tabs, Apple Pencil handwritten search, digital stickers, and cloud backups revolutionize family history research.",
+    metaDescription: "A complete guide to paperless digital genealogy on iPad and GoodNotes 6. Use hyperlinked tabs, handwritten search, and digital trees.",
     keywords: [
       "GoodNotes genealogy planner",
       "digital genealogy planner iPad",
@@ -648,6 +654,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
   {
     slug: "free-family-tree-starter-kit-guide",
     title: "How to Start Your Family Tree for Free: The Beginner's Complete Roadmap",
+    shortTitle: "How to Start Your Family Tree for Free",
     tagline: "Gather home records, conduct elderly oral histories, and log primary evidence without expensive subscriptions.",
     excerpt: "Want to trace your ancestry without spending hundreds of dollars on subscriptions and paywalled archives? Here is the step-by-step beginner's roadmap to kickstarting your family history using free repositories, pedigree charts, and home artifacts.",
     category: "Beginner Guides",
@@ -660,7 +667,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
     },
     coverImage: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80",
-    metaDescription: "Learn how to build your family tree for free. Beginner roadmap covering home archival searches, oral history interview scripts, free databases (FamilySearch, NARA), and pedigree chart logging.",
+    metaDescription: "Step-by-step beginner guide to building your family tree for free. Covers home archives, oral history questions, and pedigree charts.",
     keywords: [
       "how to start family tree for free",
       "free genealogy starter kit",

@@ -4,9 +4,9 @@ import Link from "next/link";
 import { Scale, FileText, CheckCircle2, AlertCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — FamilyRootsHub",
+  title: "Terms of Service",
   description:
-    "Terms of Service and digital purchase license agreement for FamilyRootsHub.com genealogy templates, printables, and guides.",
+    "Terms of Service and digital purchase license agreement for FamilyRootsHub genealogy templates, printables, and guides.",
   openGraph: {
     title: "Terms of Service | FamilyRootsHub",
     description: "Read the terms governing use of FamilyRootsHub and our digital archival products.",

@@ -8,9 +8,9 @@ import { Button } from "@/components/Button";
 import { BreadcrumbJsonLd, ItemListJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Genealogy Research Guides, Archival Methods & Tutorials — FamilyRootsHub",
+  title: "Genealogy Research Guides & Tutorials",
   description:
-    "Explore authoritative genealogical tutorials on archival 3-ring binder organization, Ahnentafel numbering, US census schedules (1790–1950), gravestone symbol decoding, and GoodNotes digital planning.",
+    "Authoritative genealogy tutorials on archival 3-ring binder organization, Ahnentafel numbering, US census schedules, and digital planning.",
   keywords: [
     "genealogy blog",
     "family history guides",

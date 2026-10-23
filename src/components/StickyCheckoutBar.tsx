@@ -94,8 +94,6 @@ export const StickyCheckoutBar: React.FC<StickyCheckoutBarProps> = ({
               href={product.gumroadUrl}
               className="gumroad-button shrink-0"
               data-gumroad-single-product="true"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <Button
                 variant="secondary"

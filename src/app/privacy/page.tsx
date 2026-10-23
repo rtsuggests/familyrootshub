@@ -4,9 +4,9 @@ import Link from "next/link";
 import { ShieldCheck, Lock, Eye, FileText, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — FamilyRootsHub",
+  title: "Privacy Policy",
   description:
-    "Privacy Policy for FamilyRootsHub.com. Learn how we collect, use, and protect your personal information, including Google AdSense, cookie disclosures, and data security.",
+    "Privacy Policy for FamilyRootsHub. Learn how we handle your personal data, Google AdSense cookies, and digital purchase security.",
   openGraph: {
     title: "Privacy Policy | FamilyRootsHub",
     description: "Learn how FamilyRootsHub protects your personal data and respects user privacy.",

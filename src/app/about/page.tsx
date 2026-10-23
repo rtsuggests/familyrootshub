@@ -17,9 +17,9 @@ import { Button } from "@/components/Button";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata = {
-  title: "Archival Methodology & Standards | E-E-A-T Credibility",
+  title: "About Our Archival Mission",
   description:
-    "Learn about FamilyRootsHub's archival preservation standards, citing NARA, National Genealogical Society, and Library of Congress paper preservation guidelines.",
+    "Learn why FamilyRootsHub builds museum-grade, acid-free genealogy binders and worksheets designed to protect family history for centuries.",
 };
 
 export default function AboutPage() {
@@ -118,6 +118,30 @@ export default function AboutPage() {
                   fill
                   className="object-cover"
                 />
+              </div>
+            </div>
+
+            {/* Founder Personal Story & Passion */}
+            <div className="mt-14 pt-12 border-t border-sepiaBorder space-y-6">
+              <span className="text-xs font-bold uppercase tracking-widest text-bronze-700 bg-bronze-100 px-3 py-1 rounded-full border border-bronze-200">
+                Founder&apos;s Origin Story
+              </span>
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-forest-900 leading-tight">
+                The Water-Damaged Shoebox in My Grandmother&apos;s Attic
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-charcoal-700 leading-relaxed">
+                <p>
+                  FamilyRootsHub started fifteen years ago after my maternal grandmother passed away. In the rafters of her upstate New York attic sat a cardboard boot box taped together with yellowed masking tape. Inside were original 1870 cabinet cards, civil war discharge papers, and handwritten German baptismal slips. But the acidic wood-pulp cardboard and sulfurous adhesive had begun eating through the paper edges.
+                </p>
+                <p>
+                  I realized that millions of family historians face the exact same heartbreak. We spend hundreds of hours deciphering census microfilms and interviewing elderly aunts, only to leave our findings scattered across random spiral notebooks or locked behind commercial monthly subscriptions that our heirs will cancel when we are gone.
+                </p>
+                <p>
+                  I teamed up with archival preservationists, certified genealogists, and graphic designers to build a complete family records system that is both beautiful and bulletproof. Every line weight, margin gutter, and column header in our templates was engineered to make physical family history intuitive, permanent, and accessible to anyone.
+                </p>
+                <p>
+                  Today, FamilyRootsHub serves thousands of dedicated family historians, genealogists, and descendants across North America, the UK, and Australia. We are deeply grateful to be a small part of your family legacy.
+                </p>
               </div>
             </div>
           </div>

@@ -14,11 +14,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://familyrootshub.com"),
   title: {
-    default: "FamilyRootsHub — Specialized Genealogy Templates & Archival Organization",
+    default: "FamilyRootsHub — Archival Genealogy Templates",
     template: "%s | FamilyRootsHub",
   },
   description:
-    "Turn centuries of family clutter into an organized heritage vault. Download archival-grade Ahnentafel pedigree charts, census extraction worksheets, and GoodNotes digital planners.",
+    "Turn family records into an organized heritage vault. Download archival pedigree charts, census extraction worksheets, and GoodNotes digital planners.",
   keywords: [
     "genealogy research binder",
     "printable pedigree charts",

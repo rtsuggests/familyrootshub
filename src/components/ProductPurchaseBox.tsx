@@ -66,8 +66,6 @@ export const ProductPurchaseBox: React.FC<ProductPurchaseBoxProps> = ({ product 
           href={product.gumroadUrl}
           className="gumroad-button block w-full"
           data-gumroad-single-product="true"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <Button
             variant="secondary"

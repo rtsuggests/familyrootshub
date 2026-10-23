@@ -5,9 +5,9 @@ import { BreadcrumbJsonLd, ItemListJsonLd } from "@/components/JsonLd";
 import { TemplatesCatalogClientView } from "@/components/TemplatesCatalogClientView";
 
 export const metadata: Metadata = {
-  title: "Printable Genealogy Templates, Pedigree Charts & Census Worksheets — FamilyRootsHub",
+  title: "Printable Genealogy Templates & Charts",
   description:
-    "Browse our complete catalog of certified archival genealogy printables: 35-page physical research binders, decennial census extraction worksheets (1790-1950), cemetery mapping kits, and GoodNotes digital planners.",
+    "Browse archival genealogy printables: 35-page physical binders, census extraction grids (1790-1950), and GoodNotes digital planners.",
   keywords: [
     "printable genealogy templates",
     "pedigree charts pdf",
