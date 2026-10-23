@@ -1,6 +1,11 @@
 import React from "react";
 import { Product, FaqItem } from "@/types";
 
+// Helper to safely serialize JSON for script tags without XSS vulnerabilities
+function safeJsonLd(data: object): string {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
 interface ProductJsonLdProps {
   product: Product;
   url: string;
@@ -15,6 +20,8 @@ export const ProductJsonLd: React.FC<ProductJsonLdProps> = ({ product, url }) =>
     description: product.fullDescription || product.shortDescription,
     sku: `FRH-${product.id.toUpperCase()}`,
     mpn: `FRH-${product.id.toUpperCase()}`,
+    category: "Office Supplies > Paper Products > Templates & Forms",
+    inLanguage: "en-US",
     brand: {
       "@type": "Brand",
       name: "FamilyRootsHub",
@@ -112,7 +119,7 @@ export const ProductJsonLd: React.FC<ProductJsonLdProps> = ({ product, url }) =>
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
     />
   );
 };
@@ -125,6 +132,7 @@ export const FaqJsonLd: React.FC<FaqJsonLdProps> = ({ faqs }) => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    inLanguage: "en-US",
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
@@ -138,7 +146,7 @@ export const FaqJsonLd: React.FC<FaqJsonLdProps> = ({ faqs }) => {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
     />
   );
 };
@@ -167,7 +175,7 @@ export const BreadcrumbJsonLd: React.FC<BreadcrumbJsonLdProps> = ({ items }) => 
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
     />
   );
 };
@@ -211,7 +219,7 @@ export const OrganizationJsonLd: React.FC = () => {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
     />
   );
 };
@@ -241,7 +249,7 @@ export const WebSiteJsonLd: React.FC = () => {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
     />
   );
 };
@@ -271,6 +279,8 @@ export const ArticleJsonLd: React.FC<ArticleJsonLdProps> = ({
     image: [image],
     datePublished: datePublished,
     dateModified: datePublished,
+    inLanguage: "en-US",
+    articleSection: "Genealogy Research & Archival Systems",
     isPartOf: {
       "@type": "WebSite",
       "@id": "https://familyrootshub.com/#website",
@@ -311,7 +321,7 @@ export const ArticleJsonLd: React.FC<ArticleJsonLdProps> = ({
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
     />
   );
 };
@@ -343,7 +353,7 @@ export const ItemListJsonLd: React.FC<ItemListJsonLdProps> = ({
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
     />
   );
 };

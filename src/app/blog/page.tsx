@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Clock, Calendar, BookOpen, ArrowRight, Sparkles, User, Tag, Download } from "lucide-react";
 import { BLOG_ARTICLES } from "@/data/blog";
 import { Button } from "@/components/Button";
+import { BreadcrumbJsonLd, ItemListJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Genealogy Research Guides, Archival Methods & Tutorials — FamilyRootsHub",
@@ -38,8 +39,26 @@ export default function BlogIndexPage() {
   const featuredArticle = BLOG_ARTICLES[0];
   const remainingArticles = BLOG_ARTICLES.slice(1);
 
+  const breadcrumbs = [
+    { name: "Home", url: "https://familyrootshub.com" },
+    { name: "Blog & Archival Guides", url: "https://familyrootshub.com/blog" },
+  ];
+
+  const guideItems = BLOG_ARTICLES.map((article, idx) => ({
+    name: article.title,
+    url: `https://familyrootshub.com/blog/${article.slug}`,
+    position: idx + 1,
+  }));
+
   return (
-    <div className="bg-cream-100 min-h-screen py-10 sm:py-16">
+    <>
+      <BreadcrumbJsonLd items={breadcrumbs} />
+      <ItemListJsonLd
+        name="FamilyRootsHub Archival Genealogy Guides & Tutorials"
+        description="Comprehensive guides covering archival binders, census schedules, cemetery records, and digital planning."
+        items={guideItems}
+      />
+      <div className="bg-cream-100 min-h-screen py-10 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center space-x-2 text-xs text-charcoal-500" aria-label="Breadcrumb">
@@ -244,5 +263,6 @@ export default function BlogIndexPage() {
         </div>
       </div>
     </div>
+  </>
   );
 }
