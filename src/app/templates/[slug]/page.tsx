@@ -25,6 +25,7 @@ import { FaqAccordion } from "@/components/FaqAccordion";
 import { ProductJsonLd, FaqJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 import { StickyCheckoutBar } from "@/components/StickyCheckoutBar";
 import { ProductPurchaseBox } from "@/components/ProductPurchaseBox";
+import { RecommendedGuides } from "@/components/RecommendedGuides";
 
 interface ProductPageProps {
   params: {
@@ -300,6 +301,9 @@ export default function GenericProductPage({ params }: ProductPageProps) {
             </div>
           </section>
         )}
+
+        {/* Recommended Archival Guides (Phase 4 Topic Silo Linking) */}
+        <RecommendedGuides currentProductSlug={product.slug} />
 
         {/* FAQs */}
         <FaqAccordion items={PRODUCT_FAQS} />

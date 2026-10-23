@@ -79,6 +79,54 @@ export function generateMetadata({ params }: BlogPageProps): Metadata {
   };
 }
 
+function renderFormattedText(text: string): React.ReactNode {
+  // Regex to match markdown links: [anchor text](url)
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = linkRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    const anchorText = match[1];
+    const url = match[2];
+    const isInternal = url.startsWith("/") || url.startsWith("#");
+
+    if (isInternal) {
+      parts.push(
+        <Link
+          key={`${match.index}-${url}`}
+          href={url}
+          className="text-forest-900 font-semibold underline decoration-bronze-400 decoration-2 underline-offset-2 hover:text-bronze-700 hover:decoration-bronze-600 transition-colors"
+        >
+          {anchorText}
+        </Link>
+      );
+    } else {
+      parts.push(
+        <a
+          key={`${match.index}-${url}`}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-forest-900 font-semibold underline decoration-bronze-400 decoration-2 underline-offset-2 hover:text-bronze-700 hover:decoration-bronze-600 transition-colors"
+        >
+          {anchorText}
+        </a>
+      );
+    }
+    lastIndex = linkRegex.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : text;
+}
+
 export default function SingleBlogPostPage({ params }: BlogPageProps) {
   const article = BLOG_ARTICLES.find((a) => a.slug === params.slug);
 
@@ -196,7 +244,7 @@ export default function SingleBlogPostPage({ params }: BlogPageProps) {
                 data-ai-summary="true"
                 className="ai-summary p-5 sm:p-6 bg-cream-100 rounded-2xl border-l-4 border-forest-800 text-charcoal-800 text-sm sm:text-base leading-relaxed italic"
               >
-                {article.content.introduction}
+                {renderFormattedText(article.content.introduction)}
               </div>
 
               {/* Sections */}
@@ -215,7 +263,7 @@ export default function SingleBlogPostPage({ params }: BlogPageProps) {
 
                     <div className="space-y-3.5 text-sm sm:text-base text-charcoal-700 leading-relaxed font-sans">
                       {section.paragraphs.map((p, pIdx) => (
-                        <p key={pIdx}>{p}</p>
+                        <p key={pIdx}>{renderFormattedText(p)}</p>
                       ))}
                     </div>
 
@@ -287,7 +335,7 @@ export default function SingleBlogPostPage({ params }: BlogPageProps) {
               <div className="pt-8 border-t border-sepiaBorder space-y-4">
                 <h3 className="font-serif text-xl font-bold text-forest-900">Summary & Final Guidance</h3>
                 <p className="text-sm sm:text-base text-charcoal-700 leading-relaxed">
-                  {article.content.conclusion}
+                  {renderFormattedText(article.content.conclusion)}
                 </p>
               </div>
 

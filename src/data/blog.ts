@@ -90,14 +90,14 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       { id: "frequently-asked-questions", title: "6. Frequently Asked Questions" }
     ],
     content: {
-      introduction: "Every family historian encounters the 'shoebox crisis': envelopes stuffed with faded carbon copies, brittle death certificates creased along fold lines, and scribbled notes on post-its with no citations. Digital files on hard drives face format obsolescence and bit-rot within 10 to 15 years. By contrast, a properly constructed archival research binder built with acid-free paper and inert polyester sleeves can endure for 300 to 500 years without loss of legibility. In this definitive guide, we walk through the exact museum methodology recommended by the US National Archives (NARA) to construct your family heritage binder.",
+      introduction: "Every family historian encounters the 'shoebox crisis': envelopes stuffed with faded carbon copies, brittle death certificates creased along fold lines, and scribbled notes on post-its with no citations. Digital files on hard drives face format obsolescence and bit-rot within 10 to 15 years. By contrast, a properly constructed archival research binder built with acid-free paper and inert polyester sleeves can endure for 300 to 500 years without loss of legibility. In this definitive guide, we walk through the exact museum methodology recommended by the US National Archives (NARA) to construct your family heritage binder using our [35-Page Master Genealogy Research Binder](/templates/genealogy-research-binder) system or your own custom supplies.",
       sections: [
         {
           id: "why-physical-binders",
           heading: "1. Why Physical Binders Outlast Digital Storage",
           paragraphs: [
             "While cloud backups and desktop genealogy software (RootsMagic, Family Tree Maker) are excellent for quick queries, they fail the intergenerational inheritance test. If your password dies with you, or subscription genealogy platforms change proprietary formats, decades of painstaking research evaporate.",
-            "A physical binder functions as an intuitive, tactile archive. Anyone in your family—regardless of technical skill—can open the front cover, trace their lineage through the master 5-generation pedigree chart, and turn to indexed color-coded tabs containing verified primary documentation."
+            "A physical binder functions as an intuitive, tactile archive. Anyone in your family—regardless of technical skill—can open the front cover, trace their lineage through the master 5-generation pedigree chart (also available in our [free family tree starter kit](/free-starter-kit)), and turn to indexed color-coded tabs containing verified primary documentation."
           ],
           keyTakeaway: "A physical archival binder requires no electricity, no passwords, and no software licenses to pass your family's identity to great-grandchildren."
         },
@@ -130,7 +130,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           heading: "3. Organizing by the Ahnentafel Tab Protocol",
           paragraphs: [
             "The greatest danger in genealogy is disorganization. If you sort ancestors alphabetically by surname, maternal branches become hopelessly fragmented across dozens of folders. If you sort chronologically, you will spend twenty minutes searching for an ancestor's census record.",
-            "The industry standard is the Ahnentafel Structural Tab system: Person #1 is the root proband (yourself or your child). Person #2 is father, Person #3 is mother. Every father is (2n) and mother is (2n+1).",
+            "The industry standard is the [Ahnentafel numbering system](/blog/ahnentafel-numbering-system-guide): Person #1 is the root proband (yourself or your child). Person #2 is father, Person #3 is mother. Every father is (2n) and mother is (2n+1).",
             "Inside your binder, create a section for each of your four primary ancestral grandparent branches using distinct color-coded tab dividers: Paternal Grandfather (Blue), Paternal Grandmother (Green), Maternal Grandfather (Bronze/Gold), and Maternal Grandmother (Terracotta)."
           ],
           keyTakeaway: "Under the Ahnentafel protocol, every individual has an unchangeable numerical coordinate that indexes their family group sheet, census extraction sheet, and vital records."
@@ -140,7 +140,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           heading: "4. Handling Original Heirloom Documents vs. Research Copies",
           paragraphs: [
             "One cardinal rule observed by professional archivists: NEVER place rare, one-of-a-kind original records in an everyday working binder. Working binders are flipped through frequently, exposed to sunlight during research trips, and subject to finger oils.",
-            "Scan original 19th-century marriage certificates, military discharge papers, and family Bible entries at 600 DPI (minimum) in uncompressed TIFF format. Print high-resolution acid-free duplicates for your working binder.",
+            "Scan original 19th-century marriage certificates, military discharge papers, and family Bible entries at 600 DPI (minimum) in uncompressed TIFF format. Print high-resolution acid-free duplicates for your working binder and file census data on standardized [census extraction worksheets](/templates/census-extraction-worksheets).",
             "Store the fragile originals flat in archival phase boxes lined with unbuffered acid-free tissue paper in a dark, climate-controlled closet away from exterior walls and moisture."
           ]
         },
@@ -153,7 +153,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           ]
         }
       ],
-      conclusion: "Constructing your archival genealogy binder requires methodical discipline, but the reward is immense. Once assembled, you possess a tangible family heirloom that transforms scattered records into a structured, museum-grade legacy that will educate and inspire generations to come.",
+      conclusion: "Constructing your archival genealogy binder requires methodical discipline, but the reward is immense. Once assembled—whether using our pre-formatted [35-Page Master Genealogy Research Binder](/templates/genealogy-research-binder) or self-printed archival sheets—you possess a tangible family heirloom that transforms scattered records into a structured, museum-grade legacy that will educate and inspire generations to come.",
       faqs: [
         {
           question: "Can I use sheet protectors from standard big-box stores?",
@@ -275,7 +275,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
             "Format: [Ahnentafel #] - [Lastname, Firstname] - [Document Type] - [Year]",
             "Example: '008 - Sterling, Arthur James - 1880 US Census.pdf'",
             "Example: '009 - MacLeod, Margaret - 1912 Death Certificate.pdf'",
-            "When filed alphanumerically, all your ancestral files automatically sort in perfect generational pedigree order, making retrieval instant whether you are searching in Windows Explorer, macOS Finder, or a physical filing cabinet."
+            "When filed alphanumerically, all your ancestral files automatically sort in perfect generational pedigree order, making retrieval instant whether you are searching in Windows Explorer, macOS Finder, or an [acid-free physical research binder](/blog/organize-genealogy-research-binder). If you manage a large multi-branch family tree, you can also utilize the pre-built 110-page matrix inside [The Master Heritage Vault](/templates/master-heritage-vault) to streamline your documentation."
           ]
         },
         {
@@ -287,7 +287,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           ]
         }
       ],
-      conclusion: "Once you adopt the Ahnentafel numbering convention, you transform your family history from a confusing maze into a precision archival database. Every ancestor has a permanent home, and you will never wonder how an obscure record connects back to you.",
+      conclusion: "Once you adopt the Ahnentafel numbering convention, you transform your family history from a confusing maze into a precision archival database. Every ancestor has a permanent home. Pair this methodology with our [35-Page Master Genealogy Research Binder](/templates/genealogy-research-binder) or dive into our guide on [how to read US Federal Census records (1790–1950)](/blog/how-to-read-us-census-records) to begin indexing your family's records today.",
       faqs: [
         {
           question: "What number do I give to siblings, aunts, and uncles?",
@@ -358,7 +358,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           id: "pre-1850-tick-marks",
           heading: "2. Cracking the Code of 1790–1840 Head-of-Household Grids",
           paragraphs: [
-            "Many beginners abandon pre-1850 research because only one name is listed. However, when you transcribe tick-mark tallies into our dedicated Federal Census Extraction Worksheets across successive decades (1820, 1830, 1840), patterns immediately emerge.",
+            "Many beginners abandon pre-1850 research because only one name is listed. However, when you transcribe tick-mark tallies into our dedicated [Federal Census Extraction Worksheets (1790–1950)](/templates/census-extraction-worksheets) across successive decades (1820, 1830, 1840), patterns immediately emerge.",
             "If an 1830 census for 'Jacob Sterling' lists one free white male aged 40–49, one female aged 30–39, and two males under 5, and in 1840 the same household lists one male 50–59, one female 40–49, and two males 10–14, you have mathematically verified aging continuity."
           ],
           tableData: {
@@ -399,7 +399,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           ]
         }
       ],
-      conclusion: "Never settle for an index transcription summary. Always examine the full original schedule page, examine the three households listed before and after your family, and record your findings in a standardized extraction worksheet for permanent preservation.",
+      conclusion: "Never settle for an index transcription summary. Always examine the full original schedule page, examine the three households listed before and after your family, and record your findings in standardized [Federal Census Extraction Worksheets](/templates/census-extraction-worksheets) for permanent preservation in your [35-Page Master Genealogy Research Binder](/templates/genealogy-research-binder). To verify death dates that censuses cannot provide, complement your census records with our [cemetery field research guide](/blog/cemetery-field-research-grave-symbols).",
       faqs: [
         {
           question: "Why can't I find my ancestor in the 1890 Census?",
@@ -460,7 +460,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           id: "golden-rules-of-cemetery-research",
           heading: "1. The 4 Golden Rules of Ethical Field Research",
           paragraphs: [
-            "Before setting foot in a cemetery, every genealogist must understand conservation ethics. Historic headstones (sandstone, limestone, marble, and slate) are porous, fragile artifacts easily ruined by well-intentioned researchers.",
+            "Before setting foot in a cemetery, every genealogist must understand conservation ethics. Historic headstones (sandstone, limestone, marble, and slate) are porous, fragile artifacts easily ruined by well-intentioned researchers. Before heading into the field, equip yourself with clipboard-ready epigraphy forms from our [Cemetery & Vital Records Field Dossier](/templates/cemetery-vital-records-kit).",
             "Rule 1: NEVER apply shaving cream, flour, chalk, or bleach to a headstone to enhance lettering. Shaving cream contains stearic acid that penetrates stone pores, crystallizes, and shatters the face during freeze-thaw cycles.",
             "Rule 2: NEVER perform tombstone rubbings with charcoal or crayons on fragile or flaking stones. The physical pressure can topple the stone or snap it at the soil line.",
             "Rule 3: Use Raking Light: Bring an adjustable LED flashlight or a mirror. By shining light parallel across the stone face from the side, shadows will highlight microscopic carved grooves without touching the stone at all.",
@@ -515,11 +515,11 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           heading: "5. Plot Mapping: Who Else is Buried Here?",
           paragraphs: [
             "Never photograph a single headstone and leave. Family plots were purchased in clusters of 4, 8, or 12 plots. Unmarked depressions next to your ancestor frequently hold stillborn infants, impoverished relatives, or wives whose maiden names were never inscribed.",
-            "Always sketch the physical layout of adjacent headstones in a 3-row radius. Cross-check your field transcription with the Sexton's cemetery ledger or county deed books to see who purchased the perpetual care plot."
+            "Always sketch the physical layout of adjacent headstones in a 3-row radius, cross-referencing your discoveries against [historical US census records](/blog/how-to-read-us-census-records) to reconstruct entire household structures. File your sketches and photographs in your [archival genealogy research binder](/blog/organize-genealogy-research-binder) so your field research remains organized."
           ]
         }
       ],
-      conclusion: "Cemeteries are solemn open-air archives of human devotion. By practicing respectful preservation, utilizing raking light, and decoding fraternal and funerary symbols, you will uncover intimate ancestral truths that paperwork alone could never reveal.",
+      conclusion: "Cemeteries are solemn open-air archives of human devotion. By practicing respectful preservation, utilizing raking light, and decoding fraternal and funerary symbols with our [Cemetery & Vital Records Field Dossier](/templates/cemetery-vital-records-kit), you will uncover intimate ancestral truths that paperwork alone could never reveal.",
       faqs: [
         {
           question: "Can I use shaving cream if I wash it off immediately?",
@@ -609,7 +609,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           id: "hyperlinked-navigation",
           heading: "3. How 950+ Clickable Hyperlinks Work",
           paragraphs: [
-            "The magic of our Heritage Tablet Digital Planner is its interactive vector PDF architecture. On the master 5-generation pedigree dashboard, every ancestral branch is a clickable touch target.",
+            "The magic of our [Heritage Tablet Digital Planner](/templates/goodnotes-digital-planner) is its interactive vector PDF architecture. On the master 5-generation pedigree dashboard, every ancestral branch is a clickable touch target.",
             "Tap 'Ancestor #4' and GoodNotes instantly jumps directly to Person #4's individual biographical dossier. Tap the right-side index tabs ('Census', 'Vital Records', 'Military', 'DNA', 'Notes') to flip between research modules instantaneously."
           ]
         },
@@ -634,11 +634,11 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           heading: "6. Bulletproof Cloud Backups & Archival Export",
           paragraphs: [
             "Never rely on a single cloud service. Enable automated auto-backup in GoodNotes to sync a flattened PDF copy of your entire planner to Dropbox or Google Drive every evening.",
-            "Once a year, export your completed digital planner as a high-resolution print-ready PDF and print a physical archival copy to store alongside your heirloom binders."
+            "Once a year, export your completed digital planner as a high-resolution print-ready PDF and print a physical archival copy to store alongside your [physical research binders](/blog/organize-genealogy-research-binder)."
           ]
         }
       ],
-      conclusion: "A digital genealogy planner bridges the past and the future: preserving the irreplaceable tradition of handwriting family stories while leveraging the speed, portability, and searchability of modern tablet computing.",
+      conclusion: "A digital genealogy planner bridges the past and the future: preserving the irreplaceable tradition of handwriting family stories while leveraging the speed, portability, and searchability of modern tablet computing. Explore our [GoodNotes & Tablet Digital Genealogy Planner](/templates/goodnotes-digital-planner) with 950+ hyperlinks, or scale up to [The Master Heritage Vault](/templates/master-heritage-vault) for the ultimate unified physical and digital system.",
       faqs: [
         {
           question: "Can I use this planner on an Android tablet or Windows Surface?",
@@ -699,7 +699,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           heading: "1. Rule Zero: Start with Yourself and Work Backward",
           paragraphs: [
             "The most common mistake amateur researchers make is 'ancestor jumping'—leaping straight from themselves to a famous Revolutionary War soldier or European monarch with the same surname without proving the intervening generations.",
-            "Professional genealogy follows the Genealogical Proof Standard (GPS). You must always start with known facts: yourself (#1), your parents (#2 and #3), and your grandparents (#4, #5, #6, #7). Never leap backward without a verified primary record (birth, marriage, or death certificate) bridging each generation."
+            "Professional genealogy follows the Genealogical Proof Standard (GPS). You must always start with known facts: yourself (#1), your parents (#2 and #3), and your grandparents (#4, #5, #6, #7)—following the mathematical [Ahnentafel numbering system](/blog/ahnentafel-numbering-system-guide). Never leap backward without a verified primary record (birth, marriage, or death certificate) bridging each generation."
           ]
         },
         {
@@ -733,8 +733,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           heading: "4. The Best 100% Free Genealogical Databases",
           paragraphs: [
             "You don't need paid memberships to access billions of historical records. Utilize these elite, completely free archives:",
-            "FamilySearch.org: Maintained by the Church of Jesus Christ of Latter-day Saints, FamilySearch is 100% free forever and contains billions of worldwide church records, wills, passenger lists, and census images.",
-            "FindAGrave.com: Crowdsourced database containing over 230 million tombstone photographs, burial coordinates, and obituary transcriptions.",
+            "FamilySearch.org: Maintained by the Church of Jesus Christ of Latter-day Saints, FamilySearch is 100% free forever and contains billions of worldwide church records, wills, passenger lists, and decennial census images. Pair these with our guide on [how to read US Federal Census records (1790–1950)](/blog/how-to-read-us-census-records) to transcribe handwritten enumerations.",
+            "FindAGrave.com: Crowdsourced database containing over 230 million tombstone photographs, burial coordinates, and obituary transcriptions. Learn to decipher carved motifs using our [cemetery gravestone symbols guide](/blog/cemetery-field-research-grave-symbols).",
             "Chronicling America (Library of Congress): Search millions of historic digitized American newspapers from 1777 through 1963 for free."
           ]
         },
@@ -742,12 +742,12 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           id: "the-pedigree-chart-system",
           heading: "5. Logging Evidence on Your Free Starter Kit",
           paragraphs: [
-            "As records are discovered, immediately transcribe them into our Free 4-Generation Pedigree Chart and Research Log. Never rely on mental notes or scattered scraps of paper.",
-            "Recording every source citation (repository, roll number, page, certificate number) ensures your family tree stands on verified, unimpeachable historical truth."
+            "As records are discovered, immediately transcribe them into our [Free 4-Generation Pedigree Chart and Research Log](/free-starter-kit). Never rely on mental notes or scattered scraps of paper.",
+            "Recording every source citation (repository, roll number, page, certificate number) ensures your family tree stands on verified, unimpeachable historical truth. When your research outgrows 4 generations, seamlessly expand into our [35-Page Master Genealogy Research Binder](/templates/genealogy-research-binder) or standardized [census extraction worksheets](/templates/census-extraction-worksheets)."
           ]
         }
       ],
-      conclusion: "Starting your family history journey is one of the most rewarding endeavors of a lifetime. Download our free starter kit, interview your family elders this weekend, and take your first step toward building an enduring family legacy.",
+      conclusion: "Starting your family history journey is one of the most rewarding endeavors of a lifetime. Download our [Free Family Tree Starter Kit](/free-starter-kit), interview your family elders this weekend, and explore our step-by-step guide to [organizing your research in an acid-free binder](/blog/organize-genealogy-research-binder).",
       faqs: [
         {
           question: "How far back can a beginner reasonably expect to trace?",

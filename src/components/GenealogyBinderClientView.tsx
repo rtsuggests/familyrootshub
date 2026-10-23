@@ -29,6 +29,7 @@ import { FaqAccordion } from "@/components/FaqAccordion";
 import { PRODUCTS } from "@/data/products";
 import { PRODUCT_FAQS } from "@/data/faqs";
 import { formatPrice } from "@/lib/utils";
+import { RecommendedGuides } from "@/components/RecommendedGuides";
 
 export const GenealogyBinderClientView: React.FC = () => {
   const product = PRODUCTS.find((p) => p.id === "genealogy-research-binder")!;
@@ -444,6 +445,9 @@ export const GenealogyBinderClientView: React.FC = () => {
             ))}
           </div>
         </section>
+
+        {/* Recommended Archival Guides (Phase 4 Topic Silo Linking) */}
+        <RecommendedGuides currentProductSlug={product.slug} />
 
         {/* FAQs */}
         <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
