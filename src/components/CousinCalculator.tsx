@@ -164,13 +164,19 @@ export const CousinCalculator: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Person A Selector */}
               <div className="bg-cream-100/90 p-5 rounded-xl border border-sepiaBorder/80 space-y-3">
-                <label className="block text-xs font-bold uppercase tracking-wider text-forest-900">
+                <label
+                  htmlFor="user-relationship-select"
+                  className="block text-xs font-bold uppercase tracking-wider text-forest-900"
+                >
                   Step 1: Your Relationship to the Common Ancestor
                 </label>
-                <p className="text-xs text-charcoal-500">
+                <p className="text-xs text-charcoal-600">
                   Who is the most recent shared ancestor to <strong>YOU</strong>?
                 </p>
                 <select
+                  id="user-relationship-select"
+                  name="userRelationship"
+                  aria-label="Step 1: Your Relationship to the Common Ancestor"
                   value={genA}
                   onChange={(e) => setGenA(Number(e.target.value))}
                   className="w-full bg-cream-50 border border-sepiaBorder rounded-lg px-4 py-3 text-sm font-medium text-forest-900 focus:outline-none focus:ring-2 focus:ring-forest-700 shadow-sm"
@@ -181,20 +187,26 @@ export const CousinCalculator: React.FC = () => {
                     </option>
                   ))}
                 </select>
-                <div className="text-[11px] text-charcoal-500 italic">
+                <div className="text-[11px] text-charcoal-600 italic">
                   E.g. If you share your grandfather, select &quot;My Grandparent&quot;.
                 </div>
               </div>
 
               {/* Person B Selector */}
               <div className="bg-cream-100/90 p-5 rounded-xl border border-sepiaBorder/80 space-y-3">
-                <label className="block text-xs font-bold uppercase tracking-wider text-forest-900">
+                <label
+                  htmlFor="relative-relationship-select"
+                  className="block text-xs font-bold uppercase tracking-wider text-forest-900"
+                >
                   Step 2: Their Relationship to that Same Ancestor
                 </label>
-                <p className="text-xs text-charcoal-500">
+                <p className="text-xs text-charcoal-600">
                   Who is that exact same person to your <strong>RELATIVE</strong>?
                 </p>
                 <select
+                  id="relative-relationship-select"
+                  name="relativeRelationship"
+                  aria-label="Step 2: Their Relationship to that Same Ancestor"
                   value={genB}
                   onChange={(e) => setGenB(Number(e.target.value))}
                   className="w-full bg-cream-50 border border-sepiaBorder rounded-lg px-4 py-3 text-sm font-medium text-forest-900 focus:outline-none focus:ring-2 focus:ring-forest-700 shadow-sm"
@@ -205,7 +217,7 @@ export const CousinCalculator: React.FC = () => {
                     </option>
                   ))}
                 </select>
-                <div className="text-[11px] text-charcoal-500 italic">
+                <div className="text-[11px] text-charcoal-600 italic">
                   E.g. If that person is their great-grandparent, select &quot;My Great-Grandparent&quot;.
                 </div>
               </div>
@@ -271,7 +283,7 @@ export const CousinCalculator: React.FC = () => {
 
                   <button
                     onClick={handleCopy}
-                    className="mt-4 w-full bg-bronze-500 hover:bg-bronze-600 text-forest-950 font-bold text-xs py-2 px-3 rounded-lg flex items-center justify-center space-x-1.5 transition-colors shadow-sm"
+                    className="mt-4 w-full bg-bronze-400 hover:bg-bronze-300 text-forest-950 font-bold text-xs py-2 px-3 rounded-lg flex items-center justify-center space-x-1.5 transition-colors shadow-sm"
                   >
                     {copied ? <Check className="w-3.5 h-3.5 text-forest-950" /> : <Share2 className="w-3.5 h-3.5 text-forest-950" />}
                     <span>{copied ? "Copied to Clipboard!" : "Copy Relationship Data"}</span>

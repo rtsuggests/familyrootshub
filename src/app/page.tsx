@@ -212,7 +212,7 @@ export default function HomePage() {
                 {/* Visual Binder Stack Mockup Card */}
                 <div className="relative bg-cream-50 rounded-2xl border-2 border-forest-800/80 shadow-vault p-6 sm:p-7 overflow-hidden">
                   {/* Decorative Archival Label Tab */}
-                  <div className="absolute top-0 right-8 bg-bronze-500 text-cream-50 text-[10px] uppercase font-bold tracking-widest px-4 py-1.5 rounded-b-lg shadow-sm border-x border-b border-bronze-600">
+                  <div className="absolute top-0 right-8 bg-forest-900 text-cream-50 text-[10px] uppercase font-bold tracking-widest px-4 py-1.5 rounded-b-lg shadow-sm border-x border-b border-forest-800">
                     Archival Heirloom Edition
                   </div>
 
@@ -498,7 +498,7 @@ export default function HomePage() {
                   <div>
                     <h4 className="font-serif font-bold text-sm text-forest-900">{t.name}</h4>
                     <p className="text-[11px] text-charcoal-500">{t.role}</p>
-                    <p className="text-[10px] text-bronze-600 font-semibold">{t.location}</p>
+                    <p className="text-[10px] text-bronze-800 font-semibold">{t.location}</p>
                   </div>
                 </div>
               </div>

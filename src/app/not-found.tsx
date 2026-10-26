@@ -12,7 +12,7 @@ export default function NotFound() {
         </div>
 
         <div>
-          <span className="text-xs uppercase font-bold tracking-widest text-bronze-600 bg-bronze-100 px-3 py-1 rounded-full border border-bronze-200">
+          <span className="text-xs uppercase font-bold tracking-widest text-bronze-800 bg-bronze-100 px-3 py-1 rounded-full border border-bronze-200">
             Error 404 &bull; Missing Record
           </span>
           <h1 className="font-serif text-3xl font-bold text-forest-900 mt-3">

@@ -36,9 +36,9 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       primary:
         "bg-forest-800 text-cream-50 hover:bg-forest-700 active:bg-forest-900 border border-forest-900 shadow-sm focus:ring-2 focus:ring-forest-600 focus:ring-offset-2",
       secondary:
-        "bg-bronze-500 text-white hover:bg-bronze-600 active:bg-bronze-700 border border-bronze-600 shadow-sm focus:ring-2 focus:ring-bronze-400 focus:ring-offset-2",
+        "bg-bronze-400 text-forest-950 font-bold hover:bg-bronze-300 active:bg-bronze-500 border border-bronze-500 shadow-sm focus:ring-2 focus:ring-bronze-500 focus:ring-offset-2",
       accent:
-        "bg-amber-600 text-white hover:bg-amber-700 active:bg-amber-800 border border-amber-700 shadow-sm focus:ring-2 focus:ring-amber-500",
+        "bg-amber-700 text-white hover:bg-amber-800 active:bg-amber-900 border border-amber-800 shadow-sm focus:ring-2 focus:ring-amber-600",
       outline:
         "bg-transparent text-forest-800 border-2 border-forest-800 hover:bg-forest-50 active:bg-forest-100 focus:ring-2 focus:ring-forest-700",
       ghost:

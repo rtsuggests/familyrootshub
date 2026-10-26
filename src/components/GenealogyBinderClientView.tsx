@@ -221,7 +221,7 @@ export const GenealogyBinderClientView: React.FC = () => {
               <div className="lg:col-span-5 bg-cream-50 rounded-2xl border border-sepiaBorder shadow-vault p-6 sm:p-8 space-y-6">
                 <div>
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-bold text-bronze-600 uppercase tracking-widest bg-bronze-100 px-2.5 py-0.5 rounded-full border border-bronze-200">
+                    <span className="text-xs font-bold text-bronze-800 uppercase tracking-widest bg-bronze-100 px-2.5 py-0.5 rounded-full border border-bronze-200">
                       Printable Binder Kit
                     </span>
                     <div className="flex items-center text-amber-500 text-xs font-bold">

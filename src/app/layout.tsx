@@ -87,7 +87,7 @@ export default function RootLayout({
       <body>
         <Script
           src="https://gumroad.com/js/gumroad.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         <ClientLayout>{children}</ClientLayout>
       </body>

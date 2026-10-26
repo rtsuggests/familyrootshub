@@ -40,7 +40,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               "px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase shadow-sm border",
               isFree
                 ? "bg-forest-800 text-cream-100 border-forest-900"
-                : "bg-bronze-500 text-white border-bronze-600"
+                : "bg-forest-900 text-cream-100 border-forest-800"
             )}
           >
             {product.badge}
@@ -81,7 +81,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         <div>
           {/* Category & Rating */}
           <div className="flex items-center justify-between text-xs text-charcoal-500 mb-2">
-            <span className="font-semibold text-bronze-600 uppercase tracking-wider text-[11px]">
+            <span className="font-bold text-bronze-800 uppercase tracking-wider text-[11px]">
               {product.category}
             </span>
             <div className="flex items-center space-x-1 text-amber-500">

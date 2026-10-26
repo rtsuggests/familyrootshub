@@ -80,7 +80,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
           <div className="p-6 sm:p-8 flex flex-col justify-between">
             <div className="space-y-4">
               <div className="flex items-center space-x-2 text-xs">
-                <span className="font-bold uppercase tracking-wider text-bronze-600 bg-bronze-100/70 px-2 py-0.5 rounded">
+                <span className="font-bold uppercase tracking-wider text-bronze-800 bg-bronze-100/70 px-2 py-0.5 rounded">
                   {product.category}
                 </span>
                 <span className="text-charcoal-400">&bull;</span>

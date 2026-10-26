@@ -58,7 +58,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenLeadModal }) => {
             </div>
             <div className="flex flex-col">
               <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-forest-900 group-hover:text-forest-700 transition-colors">
-                FamilyRoots<span className="text-bronze-500">Hub</span>
+                FamilyRoots<span className="text-bronze-800">Hub</span>
               </span>
               <span className="text-[10px] uppercase tracking-widest text-charcoal-500 font-sans font-semibold">
                 Archival Genealogy Vault
