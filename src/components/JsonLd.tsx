@@ -32,6 +32,7 @@ export const ProductJsonLd: React.FC<ProductJsonLdProps> = ({ product, url }) =>
       priceCurrency: "USD",
       price: product.price.toFixed(2),
       priceValidUntil: "2027-12-31",
+      validFrom: "2024-01-01",
       itemCondition: "https://schema.org/NewCondition",
       availability: "https://schema.org/InStock",
       seller: {
