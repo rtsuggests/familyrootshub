@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Mail, Clock, ShieldCheck, MapPin, Send, CheckCircle2, MessageSquare, HelpCircle } from "lucide-react";
+import { Mail, Clock, ShieldCheck, MapPin, Send, CheckCircle2, MessageSquare, HelpCircle, Compass } from "lucide-react";
 import { Button } from "@/components/Button";
 
 export const ContactClientView: React.FC = () => {
@@ -95,13 +95,13 @@ export const ContactClientView: React.FC = () => {
 
               <div className="flex items-start space-x-3.5">
                 <div className="w-9 h-9 rounded-lg bg-forest-800 flex items-center justify-center shrink-0 text-bronze-300 border border-forest-700">
-                  <MapPin className="w-4 h-4" />
+                  <Compass className="w-4 h-4" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-cream-100">Physical Scribing Studio</h3>
-                  <p className="text-charcoal-200">FamilyRootsHub Archival Media LLC</p>
-                  <p className="text-charcoal-300 text-xs">P.O. Box 714, Historic Archives District</p>
-                  <p className="text-charcoal-300 text-xs">Albany, NY 12207, United States</p>
+                  <h3 className="font-bold text-cream-100">Digital Preservation Studio</h3>
+                  <p className="text-charcoal-200">FamilyRootsHub Archival Media</p>
+                  <p className="text-charcoal-300 text-xs">Worldwide Digital Distribution &amp; Instant PDF Delivery</p>
+                  <p className="text-charcoal-300 text-xs">Online Inquiries &amp; Order Reissues: support@familyrootshub.com</p>
                 </div>
               </div>
             </div>

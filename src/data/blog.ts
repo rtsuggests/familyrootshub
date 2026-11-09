@@ -59,9 +59,9 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     isoDate: "2026-10-18T09:00:00Z",
     readTime: "9 min read",
     author: {
-      name: "Eleanor Vance, CG",
-      role: "Certified Genealogist & Archival Preservationist",
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+      name: "FamilyRootsHub Archival Team",
+      role: "Archival Preservationists & Lineage Researchers",
+      avatar: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=200&q=80",
     },
     coverImage: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
     metaDescription: "Step-by-step guide to organizing family history papers in an acid-free 3-ring binder using Ahnentafel numbering and archival Mylar sleeves.",
@@ -181,9 +181,9 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     isoDate: "2026-10-16T09:00:00Z",
     readTime: "8 min read",
     author: {
-      name: "Marcus Sterling",
-      role: "Senior Lineage Researcher & Paleographer",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      name: "FamilyRootsHub Archival Team",
+      role: "Archival Preservationists & Lineage Researchers",
+      avatar: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=200&q=80",
     },
     coverImage: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80",
     metaDescription: "Master the Ahnentafel genealogical numbering system. Learn mathematical doubling formulas, even vs. odd rules, and chart numbering.",
@@ -311,9 +311,9 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     isoDate: "2026-10-14T09:00:00Z",
     readTime: "11 min read",
     author: {
-      name: "Eleanor Vance, CG",
-      role: "Certified Genealogist & Archival Preservationist",
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+      name: "FamilyRootsHub Archival Team",
+      role: "Archival Preservationists & Lineage Researchers",
+      avatar: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=200&q=80",
     },
     coverImage: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
     metaDescription: "Learn how to read and transcribe US Federal Census records from 1790 to 1950. Decipher tick marks, Soundex codes, and avoid errors.",
@@ -423,9 +423,9 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     isoDate: "2026-10-12T09:00:00Z",
     readTime: "10 min read",
     author: {
-      name: "Marcus Sterling",
-      role: "Senior Lineage Researcher & Paleographer",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      name: "FamilyRootsHub Archival Team",
+      role: "Archival Preservationists & Lineage Researchers",
+      avatar: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=200&q=80",
     },
     coverImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
     metaDescription: "Decode gravestone symbols, transcribe weathered epitaphs safely, and map cemetery plots using ethical conservation standards.",
@@ -543,9 +543,9 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     isoDate: "2026-10-10T09:00:00Z",
     readTime: "9 min read",
     author: {
-      name: "Eleanor Vance, CG",
-      role: "Certified Genealogist & Archival Preservationist",
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+      name: "FamilyRootsHub Archival Team",
+      role: "Archival Preservationists & Lineage Researchers",
+      avatar: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=200&q=80",
     },
     coverImage: "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1200&q=80",
     metaDescription: "A complete guide to paperless digital genealogy on iPad and GoodNotes 6. Use hyperlinked tabs, handwritten search, and digital trees.",
@@ -563,12 +563,12 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       price: 24,
       gumroadUrl: "https://familyrootshub.gumroad.com/l/heritage-tablet-planner?wanted=true",
       coverImage: "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=800&q=80",
-      description: "Interactive PDF with 950+ clickable hyperlinked tabs, ancestor dossier spreads, and 250+ digital archival stickers."
+      description: "Interactive 40-page PDF with 8 hyperlinked section tabs, ancestor dossier spreads, and 250+ digital archival stickers."
     },
     tableOfContents: [
       { id: "why-go-digital", title: "1. The Advantages of Tablet-Based Genealogy" },
       { id: "recommended-hardware-software", title: "2. Best Hardware & Software Setup (GoodNotes vs. Notability)" },
-      { id: "hyperlinked-navigation", title: "3. How 950+ Clickable Hyperlinks Work" },
+      { id: "hyperlinked-navigation", title: "3. How 8 Clickable Section Tabs Work" },
       { id: "handwritten-search-power", title: "4. OCR Magic: Searching Your Handwriting Instantly" },
       { id: "photo-and-sticker-workflows", title: "5. Digital Ephemera: Stickers, Scans, & Wax Seals" },
       { id: "cloud-backup-protocol", title: "6. Bulletproof Cloud Backups & Archival Export" }
@@ -581,7 +581,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           heading: "1. The Advantages of Tablet-Based Genealogy",
           paragraphs: [
             "Going digital doesn't mean abandoning the tactile pleasure of handwriting your ancestor profiles. With an iPad or Android tablet, you write naturally with your stylus while gaining superpowers that paper cannot provide:",
-            "Infinite storage: Carry 88+ comprehensive template spreads covering hundreds of direct ancestors without adding a single gram of weight to your briefcase.",
+            "Infinite storage: Carry 40 comprehensive archival spreads across 8 dedicated hyperlinked sections without adding a single gram of weight to your briefcase.",
             "Instant photography integration: Snap a photo of a microfilmed will or an obscure gravestone with your tablet camera and paste it directly onto your ancestor's dossier page in three seconds.",
             "Zero ink smears: Edit, erase, color-code, and lasso-select notes without white-out or scribbled strike-throughs."
           ]
@@ -607,10 +607,10 @@ export const BLOG_ARTICLES: BlogArticle[] = [
         },
         {
           id: "hyperlinked-navigation",
-          heading: "3. How 950+ Clickable Hyperlinks Work",
+          heading: "3. How 8 Clickable Section Tabs Work",
           paragraphs: [
-            "The magic of our [Heritage Tablet Digital Planner](/templates/goodnotes-digital-planner) is its interactive vector PDF architecture. On the master 5-generation pedigree dashboard, every ancestral branch is a clickable touch target.",
-            "Tap 'Ancestor #4' and GoodNotes instantly jumps directly to Person #4's individual biographical dossier. Tap the right-side index tabs ('Census', 'Vital Records', 'Military', 'DNA', 'Notes') to flip between research modules instantaneously."
+            "The magic of our [Heritage Tablet Digital Planner](/templates/goodnotes-digital-planner) is its interactive 40-page vector PDF architecture with 8 dedicated hyperlinked section tabs. On the master 5-generation pedigree dashboard, every ancestral branch is a clickable touch target.",
+            "Tap 'Ancestor #4' and GoodNotes instantly jumps directly to Person #4's individual biographical dossier. Tap the right-side index tabs ('Pedigree', 'Family Groups', 'Census', 'Cemetery', 'Military', 'Land & Wills', 'DNA', 'Research Logs') to flip between research modules instantaneously."
           ]
         },
         {
@@ -638,7 +638,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           ]
         }
       ],
-      conclusion: "A digital genealogy planner bridges the past and the future: preserving the irreplaceable tradition of handwriting family stories while leveraging the speed, portability, and searchability of modern tablet computing. Explore our [GoodNotes & Tablet Digital Genealogy Planner](/templates/goodnotes-digital-planner) with 950+ hyperlinks, or scale up to [The Master Heritage Vault](/templates/master-heritage-vault) for the ultimate unified physical and digital system.",
+      conclusion: "A digital genealogy planner bridges the past and the future: preserving the irreplaceable tradition of handwriting family stories while leveraging the speed, portability, and searchability of modern tablet computing. Explore our [40-Page GoodNotes & Tablet Digital Genealogy Planner](/templates/goodnotes-digital-planner) with 8 hyperlinked section tabs, or scale up to [The Master Heritage Vault](/templates/master-heritage-vault) for the ultimate unified physical and digital system.",
       faqs: [
         {
           question: "Can I use this planner on an Android tablet or Windows Surface?",
@@ -662,9 +662,9 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     isoDate: "2026-10-08T09:00:00Z",
     readTime: "7 min read",
     author: {
-      name: "Marcus Sterling",
-      role: "Senior Lineage Researcher & Paleographer",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      name: "FamilyRootsHub Archival Team",
+      role: "Archival Preservationists & Lineage Researchers",
+      avatar: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=200&q=80",
     },
     coverImage: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80",
     metaDescription: "Step-by-step beginner guide to building your family tree for free. Covers home archives, oral history questions, and pedigree charts.",

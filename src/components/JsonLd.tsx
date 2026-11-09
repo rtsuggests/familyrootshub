@@ -152,9 +152,10 @@ export const FaqJsonLd: React.FC<FaqJsonLdProps> = ({ faqs }) => {
   );
 };
 
-interface BreadcrumbItem {
+export interface BreadcrumbItem {
   name: string;
-  url: string;
+  url?: string;
+  item?: string;
 }
 
 interface BreadcrumbJsonLdProps {
@@ -165,11 +166,11 @@ export const BreadcrumbJsonLd: React.FC<BreadcrumbJsonLdProps> = ({ items }) => 
   const schema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => ({
+    itemListElement: items.map((crumb, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name: item.name,
-      item: item.url,
+      name: crumb.name,
+      item: crumb.url || crumb.item || "",
     })),
   };
 

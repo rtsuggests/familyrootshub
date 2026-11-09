@@ -71,9 +71,14 @@ export const TemplatesCatalogClientView: React.FC = () => {
           <div className="bg-cream-50 rounded-2xl shadow-vault border border-sepiaBorder p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
             {/* Search Input */}
             <div className="relative flex-1 max-w-md">
+              <label htmlFor="template-search-input" className="sr-only">
+                Search genealogy templates
+              </label>
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-charcoal-400" />
               <input
+                id="template-search-input"
                 type="text"
+                aria-label="Search genealogy templates"
                 placeholder="Search templates (e.g., Census, GoodNotes, Ahnentafel)..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}

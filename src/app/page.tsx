@@ -139,7 +139,7 @@ export default function HomePage() {
 
               <h1 className="font-serif text-4xl sm:text-5xl xl:text-6xl font-bold text-forest-900 leading-[1.12] tracking-tight">
                 Turn Centuries of Family Clutter into an{" "}
-                <span className="text-bronze-600 underline decoration-bronze-300 decoration-wavy decoration-2">
+                <span className="text-bronze-800 underline decoration-bronze-400 decoration-wavy decoration-2">
                   Organized Heritage Vault
                 </span>
               </h1>
@@ -172,36 +172,19 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              {/* Social Proof snippet under buttons */}
-              <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-charcoal-600">
-                <div className="flex items-center space-x-1.5">
-                  <div className="flex -space-x-1.5 overflow-hidden">
-                    <img
-                      className="inline-block h-6 w-6 rounded-full ring-2 ring-cream-100 object-cover"
-                      src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&h=80&q=80"
-                      alt="Eleanor Vance"
-                    />
-                    <img
-                      className="inline-block h-6 w-6 rounded-full ring-2 ring-cream-100 object-cover"
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&h=80&q=80"
-                      alt="Marcus Thornton"
-                    />
-                    <img
-                      className="inline-block h-6 w-6 rounded-full ring-2 ring-cream-100 object-cover"
-                      src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=80&h=80&q=80"
-                      alt="Sarah Miller"
-                    />
-                  </div>
-                  <div className="flex items-center text-amber-500 font-bold ml-1">
-                    <Star className="w-3.5 h-3.5 fill-current" />
-                    <span className="text-charcoal-800 ml-1">4.98 / 5.0</span>
-                  </div>
-                  <span>(1,840+ genealogists)</span>
+              {/* Authentic Technical Specification Badges */}
+              <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3.5 text-xs">
+                <div className="flex items-center space-x-1.5 bg-cream-50/80 border border-sepiaBorder px-3 py-1 rounded-full text-forest-900 font-medium shadow-sm">
+                  <ShieldCheck className="w-3.5 h-3.5 text-forest-800" />
+                  <span>NARA &amp; NGS Archival Standards</span>
                 </div>
-
-                <div className="flex items-center space-x-1 text-forest-800 font-semibold">
-                  <ShieldCheck className="w-4 h-4 text-forest-700" />
-                  <span>NARA &amp; NGS Archival Protocols</span>
+                <div className="flex items-center space-x-1.5 bg-cream-50/80 border border-sepiaBorder px-3 py-1 rounded-full text-forest-900 font-medium shadow-sm">
+                  <Layers className="w-3.5 h-3.5 text-forest-800" />
+                  <span>0.75&quot; 3-Ring Binder Margins</span>
+                </div>
+                <div className="flex items-center space-x-1.5 bg-cream-50/80 border border-sepiaBorder px-3 py-1 rounded-full text-forest-900 font-medium shadow-sm">
+                  <Award className="w-3.5 h-3.5 text-bronze-700" />
+                  <span>300-DPI Vector Print Masters</span>
                 </div>
               </div>
             </div>
@@ -296,8 +279,13 @@ export default function HomePage() {
                   className="flex flex-col sm:flex-row gap-3"
                 >
                   <div className="flex-1">
+                    <label htmlFor="homepage-email-input" className="sr-only">
+                      Email address for free 4-generation pedigree kit
+                    </label>
                     <input
+                      id="homepage-email-input"
                       type="email"
+                      aria-label="Email address for free 4-generation pedigree kit"
                       placeholder="Enter your email address..."
                       className="w-full px-4 py-3 rounded-xl bg-cream-50 text-charcoal-900 placeholder-charcoal-400 text-sm focus:outline-none focus:ring-2 focus:ring-bronze-400 border border-sepiaBorder shadow-inner"
                       {...register("email")}
@@ -310,11 +298,11 @@ export default function HomePage() {
                   </div>
                   <Button
                     type="submit"
-                    variant="secondary"
+                    variant="primary"
                     size="md"
                     isLoading={isSubmitting}
-                    leftIcon={<Download className="w-4 h-4" />}
-                    className="shrink-0"
+                    leftIcon={<Download className="w-4 h-4 text-bronze-300" />}
+                    className="shrink-0 font-bold shadow-md"
                   >
                     Download Free PDF
                   </Button>

@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { PRODUCTS } from "@/data/products";
 import { BLOG_ARTICLES } from "@/data/blog";
+import { CENSUS_YEARS } from "@/data/censusYears";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://familyrootshub.com";
@@ -26,6 +27,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/tools`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/tools/gravestone-birth-date-calculator`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/tools/soundex-code-generator`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/tools/ahnentafel-calculator`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/tools/cousin-relationship-calculator`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/census-guides`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/blog`,
@@ -66,7 +103,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // The 5 Paid Product Pages under /templates/[slug]
-  // Note: The 6th product (Free Starter Kit) is mapped directly above to its canonical /free-starter-kit URL
   const productPages: MetadataRoute.Sitemap = PRODUCTS.filter(
     (p) => p.slug !== "free-starter-kit"
   ).map((product) => ({
@@ -84,5 +120,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  return [...staticPages, ...productPages, ...blogPages];
+  // All 17 Programmatic US Census Year Guides (1790 to 1950)
+  const censusYearPages: MetadataRoute.Sitemap = CENSUS_YEARS.map((guide) => ({
+    url: `${baseUrl}/census-guides/${guide.year}`,
+    lastModified: currentDate,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...productPages, ...blogPages, ...censusYearPages];
 }

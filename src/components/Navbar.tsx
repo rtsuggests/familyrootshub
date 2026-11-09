@@ -29,11 +29,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenLeadModal }) => {
   }, []);
 
   const navLinks = [
-    { name: "Template Catalog", href: "/templates", icon: BookOpen },
+    { name: "Templates", href: "/templates", icon: BookOpen },
     { name: "35-Page Binder", href: "/templates/genealogy-research-binder", icon: Sparkles, badge: "Flagship" },
-    { name: "Blog / Guides", href: "/blog", icon: Newspaper },
-    { name: "Cousin Calculator", href: "/#cousin-calculator", icon: Calculator },
-    { name: "Archival Standards", href: "/about", icon: Compass },
+    { name: "Census Guides", href: "/census-guides", icon: Newspaper },
+    { name: "Free Tools", href: "/tools", icon: Calculator, badge: "4 Tools" },
+    { name: "Blog", href: "/blog", icon: BookOpen },
     { name: "Free Kit (PDF)", href: "/free-starter-kit", icon: Download, highlight: true },
   ];
 

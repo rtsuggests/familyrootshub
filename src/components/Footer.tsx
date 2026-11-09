@@ -44,9 +44,9 @@ export const Footer: React.FC = () => {
 
       {/* Main Footer Links */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Brand Info */}
-          <div className="lg:col-span-2 space-y-4">
+          <div className="sm:col-span-2 lg:col-span-2 space-y-4">
             <div className="flex items-center space-x-3">
               <div className="w-9 h-9 rounded-lg bg-bronze-500 text-forest-950 flex items-center justify-center font-bold">
                 <TreePine className="w-6 h-6 text-forest-950" />
@@ -60,80 +60,123 @@ export const Footer: React.FC = () => {
             </p>
             <div className="pt-2 text-xs text-bronze-300/80 flex items-center space-x-2">
               <Heart className="w-3.5 h-3.5 text-bronze-400 fill-current" />
-              <span>Crafted for genealogists, family scribes & archival keepers.</span>
+              <span>Crafted for genealogists, family scribes &amp; archival keepers.</span>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Templates & Catalog */}
           <div className="space-y-3">
             <h5 className="font-serif text-sm font-semibold tracking-wider text-bronze-300 uppercase">
-              Templates & Hub
+              Archival Kits
             </h5>
-            <ul className="space-y-2 text-sm text-charcoal-300">
+            <ul className="space-y-2 text-xs sm:text-sm text-charcoal-300">
               <li>
                 <Link href="/templates" className="hover:text-cream-100 transition-colors">
                   All Printable Templates
                 </Link>
               </li>
               <li>
-                <Link href="/templates/genealogy-research-binder" className="hover:text-cream-100 transition-colors">
+                <Link href="/templates/genealogy-research-binder" className="hover:text-cream-100 transition-colors font-medium text-cream-100">
                   35-Page Master Binder
                 </Link>
               </li>
               <li>
-                <Link href="/templates?category=Census+Extractors" className="hover:text-cream-100 transition-colors">
-                  Federal Census Extractors
+                <Link href="/templates/census-extraction-worksheets" className="hover:text-cream-100 transition-colors">
+                  9-Template Census Kit
                 </Link>
               </li>
               <li>
-                <Link href="/templates?category=Digital+Planners+(GoodNotes)" className="hover:text-cream-100 transition-colors">
-                  GoodNotes Digital Planners
+                <Link href="/templates/cemetery-vital-records-kit" className="hover:text-cream-100 transition-colors">
+                  14-Page Cemetery Dossier
                 </Link>
               </li>
               <li>
-                <Link href="/free-starter-kit" className="hover:text-cream-100 transition-colors flex items-center">
+                <Link href="/templates/goodnotes-digital-planner" className="hover:text-cream-100 transition-colors">
+                  GoodNotes Tablet Planner
+                </Link>
+              </li>
+              <li>
+                <Link href="/free-starter-kit" className="hover:text-cream-100 transition-colors flex items-center text-bronze-300 font-semibold">
                   <span>Free Pedigree Starter Kit</span>
-                  <ArrowUpRight className="w-3 h-3 ml-1 text-bronze-400" />
+                  <ArrowUpRight className="w-3 h-3 ml-1" />
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Research Tools & Guides */}
+          {/* Free Genealogy Tools */}
           <div className="space-y-3">
             <h5 className="font-serif text-sm font-semibold tracking-wider text-bronze-300 uppercase">
-              Free Utilities & Guides
+              Free Tools
             </h5>
-            <ul className="space-y-2 text-sm text-charcoal-300">
+            <ul className="space-y-2 text-xs sm:text-sm text-charcoal-300">
               <li>
-                <Link href="/blog" className="hover:text-cream-100 transition-colors flex items-center font-medium text-bronze-300">
-                  <span>Blog & Archival Guides</span>
-                  <ArrowUpRight className="w-3 h-3 ml-1" />
+                <Link href="/tools" className="hover:text-cream-100 transition-colors font-medium text-bronze-300">
+                  All Research Tools →
                 </Link>
               </li>
               <li>
-                <Link href="/#cousin-calculator" className="hover:text-cream-100 transition-colors">
-                  Interactive Cousin Calculator
+                <Link href="/tools/gravestone-birth-date-calculator" className="hover:text-cream-100 transition-colors">
+                  Gravestone 8870 Calculator
                 </Link>
               </li>
               <li>
-                <Link href="/#archival-gear" className="hover:text-cream-100 transition-colors">
-                  Recommended Archival Gear
+                <Link href="/tools/soundex-code-generator" className="hover:text-cream-100 transition-colors">
+                  NARA Soundex Generator
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-cream-100 transition-colors">
-                  Archival Methodology & E-E-A-T
+                <Link href="/tools/ahnentafel-calculator" className="hover:text-cream-100 transition-colors">
+                  Ahnentafel Lineage Decoder
                 </Link>
               </li>
               <li>
-                <Link href="/templates/genealogy-research-binder#system-guide" className="hover:text-cream-100 transition-colors">
-                  Binder Setup Guide
+                <Link href="/tools/cousin-relationship-calculator" className="hover:text-cream-100 transition-colors">
+                  Cousin Kinship &amp; DNA
                 </Link>
               </li>
               <li>
-                <Link href="/#faq-section" className="hover:text-cream-100 transition-colors">
-                  Genealogy FAQ
+                <Link href="/blog" className="hover:text-cream-100 transition-colors">
+                  Archival Research Guides
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Census Year Guides */}
+          <div className="space-y-3">
+            <h5 className="font-serif text-sm font-semibold tracking-wider text-bronze-300 uppercase">
+              Census Guides
+            </h5>
+            <ul className="space-y-2 text-xs sm:text-sm text-charcoal-300">
+              <li>
+                <Link href="/census-guides" className="hover:text-cream-100 transition-colors font-medium text-bronze-300">
+                  All 17 Census Guides →
+                </Link>
+              </li>
+              <li>
+                <Link href="/census-guides/1790" className="hover:text-cream-100 transition-colors">
+                  1790 (First Enumeration)
+                </Link>
+              </li>
+              <li>
+                <Link href="/census-guides/1850" className="hover:text-cream-100 transition-colors">
+                  1850 (Every-Name Era)
+                </Link>
+              </li>
+              <li>
+                <Link href="/census-guides/1880" className="hover:text-cream-100 transition-colors">
+                  1880 (Relationships Era)
+                </Link>
+              </li>
+              <li>
+                <Link href="/census-guides/1900" className="hover:text-cream-100 transition-colors">
+                  1900 (Immigration &amp; Birth)
+                </Link>
+              </li>
+              <li>
+                <Link href="/census-guides/1950" className="hover:text-cream-100 transition-colors">
+                  1950 (Post-WWII Release)
                 </Link>
               </li>
             </ul>
@@ -142,9 +185,14 @@ export const Footer: React.FC = () => {
           {/* Trust & Legal */}
           <div className="space-y-3">
             <h5 className="font-serif text-sm font-semibold tracking-wider text-bronze-300 uppercase">
-              Trust & Legal
+              Trust &amp; Legal
             </h5>
-            <ul className="space-y-2 text-sm text-charcoal-300">
+            <ul className="space-y-2 text-xs sm:text-sm text-charcoal-300">
+              <li>
+                <Link href="/about" className="hover:text-cream-100 transition-colors">
+                  About Us &amp; Standards
+                </Link>
+              </li>
               <li>
                 <Link href="/privacy" className="hover:text-cream-100 transition-colors">
                   Privacy Policy
@@ -157,7 +205,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link href="/disclaimer" className="hover:text-cream-100 transition-colors">
-                  Affiliate & Ad Disclaimer
+                  Affiliate &amp; Ad Disclaimer
                 </Link>
               </li>
               <li>
@@ -168,7 +216,7 @@ export const Footer: React.FC = () => {
             </ul>
             <div className="pt-2 text-xs text-charcoal-400 space-y-1">
               <p>Support: <a href="mailto:support@familyrootshub.com" className="underline hover:text-cream-100">support@familyrootshub.com</a></p>
-              <p>Hours: Mon–Fri, 9am–5pm EST</p>
+              <p>FamilyRootsHub Archival Team</p>
             </div>
           </div>
         </div>
@@ -188,7 +236,7 @@ export const Footer: React.FC = () => {
             </div>
           </div>
           <p className="text-center md:text-right max-w-xl text-[11px] text-charcoal-400">
-            <strong>Affiliate & Ad Disclosure:</strong> FamilyRootsHub is reader-supported and Google AdSense compliant. When you purchase recommended archival pens, paper, or binders through our links, we may earn an affiliate commission at no extra cost to you.
+            <strong>Affiliate &amp; Ad Disclosure:</strong> FamilyRootsHub is reader-supported and Google AdSense compliant. When you purchase recommended archival pens, paper, or binders through our links, we may earn an affiliate commission at no extra cost to you.
           </p>
         </div>
       </div>

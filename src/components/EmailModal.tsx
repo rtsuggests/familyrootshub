@@ -234,7 +234,7 @@ export const EmailModal: React.FC<EmailModalProps> = ({
                   <input
                     id="name-input"
                     type="text"
-                    placeholder="e.g. Eleanor Vance"
+                    placeholder="e.g. Sarah Miller"
                     className="w-full px-4 py-2.5 rounded-lg border border-sepiaBorder bg-cream-100 text-charcoal-900 placeholder-charcoal-400 focus:outline-none focus:ring-2 focus:ring-forest-700"
                     {...register("firstName")}
                   />

@@ -3,7 +3,7 @@ import { Testimonial } from "@/types";
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: "1",
-    name: "Eleanor Vance-Sterling",
+    name: "Eleanor S., Certified Genealogist",
     role: "Certified Genealogist & Family Historian",
     location: "Richmond, Virginia",
     experienceYears: "24 years researching",

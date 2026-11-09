@@ -100,7 +100,7 @@ export const PRODUCT_EDUCATIONAL_CONTENT: Record<string, ProductEducationalSecti
     subtitle: "Lag-Free Vector Engineering for GoodNotes, Notability & Noteshelf",
     standardsBadge: "Interactive PDF Architecture",
     methodologyOverview:
-      "Digital genealogy planning on tablets offers unparalleled advantages: zero physical carrying weight, instant handwriting search across thousands of names, and the ability to link high-resolution photos and documents directly beside pedigree charts. However, poorly coded digital planners with bloated raster images cause sluggish page turns and application crashes on iPads and Android tablets. The Heritage Tablet Digital Planner was engineered from the ground up using optimized vector paths and 1,200+ precision-tested hyperlinks for lightning-fast responsiveness.",
+      "Digital genealogy planning on tablets offers unparalleled advantages: zero physical carrying weight, instant handwriting search across thousands of names, and the ability to link high-resolution photos and documents directly beside pedigree charts. However, poorly coded digital planners with bloated raster images cause sluggish page turns and application crashes on iPads and Android tablets. The Heritage Tablet Digital Planner was engineered from the ground up as a responsive 40-page vector layout with 8 dedicated hyperlinked section tabs for lightning-fast responsiveness.",
     principles: [
       {
         heading: "1. Apple Pencil & Stylus OCR Handwriting Searchability",

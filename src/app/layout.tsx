@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import "./globals.css";
 import { ClientLayout } from "@/components/ClientLayout";
 import { OrganizationJsonLd } from "@/components/JsonLd";
+import { GumroadOverlay } from "@/components/GumroadOverlay";
 
 export const viewport: Viewport = {
   themeColor: "#1E3A2F",
@@ -85,10 +85,7 @@ export default function RootLayout({
         <OrganizationJsonLd />
       </head>
       <body>
-        <Script
-          src="https://gumroad.com/js/gumroad.js"
-          strategy="lazyOnload"
-        />
+        <GumroadOverlay />
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
