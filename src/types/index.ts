@@ -16,8 +16,8 @@ export interface Product {
   pagesCount: number;
   isPopular?: boolean;
   isFree?: boolean;
-  rating: number;
-  reviewsCount: number;
+  rating?: number;
+  reviewsCount?: number;
   shortDescription: string;
   fullDescription: string;
   features: string[];
@@ -35,9 +35,9 @@ export interface Testimonial {
   role: string;
   location: string;
   content: string;
-  rating: number;
-  verified: boolean;
-  avatar: string;
+  rating?: number;
+  verified?: boolean;
+  avatar?: string;
   experienceYears?: string;
 }
 
@@ -49,20 +49,14 @@ export interface GearItem {
   whyArchival: string;
   priceRange: string;
   affiliateUrl: string;
-  badge: string;
-  rating: number;
-  reviewsCount: number;
-  iconName?: string;
+  badge?: string;
+  rating?: number;
+  reviewsCount?: number;
+  iconName: string;
 }
 
 export interface FaqItem {
   question: string;
   answer: string;
   category?: string;
-}
-
-export interface LeadFormData {
-  email: string;
-  firstName?: string;
-  researchFocus?: string;
 }

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "Privacy Policy for FamilyRootsHub. Learn how we handle your personal data, Google AdSense cookies, and digital purchase security.",
+  alternates: {
+    canonical: "https://familyrootshub.com/privacy",
+  },
   openGraph: {
     title: "Privacy Policy | FamilyRootsHub",
     description: "Learn how FamilyRootsHub protects your personal data and respects user privacy.",

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Printable Genealogy Templates & Archival Planners | FamilyRootsHub",
     description:
-      "Explore certified archival family history systems designed for 3-ring physical binders and digital tablet planners.",
+      "Explore archival-grade family history systems designed for 3-ring physical binders and digital tablet planners.",
     url: "https://familyrootshub.com/templates",
     images: [
       {
@@ -52,7 +52,7 @@ export default function TemplatesCatalogPage() {
       <BreadcrumbJsonLd items={breadcrumbs} />
       <ItemListJsonLd
         name="FamilyRootsHub Archival Genealogy Templates Catalog"
-        description="Certified archival printable templates, pedigree charts, census grids, and digital planners."
+        description="Archival-grade printable templates, pedigree charts, census grids, and digital planners."
         items={catalogItems}
       />
       <TemplatesCatalogClientView />

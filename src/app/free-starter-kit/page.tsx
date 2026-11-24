@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Free 4-Generation Pedigree Starter Kit | FamilyRootsHub",
     description:
-      "Get instant access to our certified archival 4-generation pedigree chart and research log. Print at home for free.",
+      "Get instant access to our archival-grade 4-generation pedigree chart and research log. Print at home for free.",
     url: pageUrl,
     images: [
       {

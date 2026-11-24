@@ -23,7 +23,7 @@ export const ArchivalGearGrid: React.FC = () => {
           <div className="max-w-2xl">
             <div className="inline-flex items-center space-x-2 bg-forest-100 text-forest-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider border border-forest-200 mb-3">
               <Award className="w-3.5 h-3.5 text-forest-700" />
-              <span>NARA &amp; Library of Congress Certified</span>
+              <span>Archival Preservation Tested</span>
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-forest-900 tracking-tight">
               Curated Archival Supplies &amp; Gear
@@ -79,13 +79,11 @@ export const ArchivalGearGrid: React.FC = () => {
               </div>
 
               <div>
-                {/* Rating & Price */}
+                {/* Format & Price */}
                 <div className="flex items-center justify-between text-xs text-charcoal-600 border-t border-sepiaBorder/60 pt-3 mb-3">
-                  <div className="flex items-center space-x-1 text-amber-500">
-                    <Star className="w-3.5 h-3.5 fill-current" />
-                    <span className="font-bold text-charcoal-800">{item.rating}</span>
-                    <span className="text-charcoal-500 text-[10px]">({item.reviewsCount})</span>
-                  </div>
+                  <span className="font-semibold text-charcoal-700 bg-cream-200/80 px-2 py-0.5 rounded text-[11px]">
+                    {item.category}
+                  </span>
                   <span className="font-semibold text-forest-900">{item.priceRange}</span>
                 </div>
 

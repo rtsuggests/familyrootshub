@@ -34,8 +34,8 @@ export const Footer: React.FC = () => {
                 <Award className="w-6 h-6 text-bronze-400" />
               </div>
               <div>
-                <h4 className="font-serif font-bold text-base text-cream-50">Certified Archival Formats</h4>
-                <p className="text-xs text-charcoal-300">Built to NARA and National Genealogical Society guidelines.</p>
+                <h4 className="font-serif font-bold text-base text-cream-50">Preservation-Grade Layouts</h4>
+                <p className="text-xs text-charcoal-300">Formatted to published NARA census schedules and NGS standards.</p>
               </div>
             </div>
           </div>

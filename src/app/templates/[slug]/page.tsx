@@ -59,6 +59,9 @@ export function generateMetadata({ params }: ProductPageProps): Metadata {
   return {
     title: cleanTitle,
     description: product.shortDescription,
+    alternates: {
+      canonical: `https://familyrootshub.com/templates/${product.slug}`,
+    },
     openGraph: {
       title: `${cleanTitle} | FamilyRootsHub`,
       description: product.shortDescription,
@@ -154,13 +157,9 @@ export default function GenericProductPage({ params }: ProductPageProps) {
                     <span className="text-xs font-bold text-bronze-800 uppercase tracking-widest bg-bronze-100 px-2.5 py-0.5 rounded-full border border-bronze-200">
                       {product.category}
                     </span>
-                    <div className="flex items-center text-amber-500 text-xs font-bold">
-                      <Star className="w-4 h-4 fill-current mr-1" />
-                      <span className="text-charcoal-800">{product.rating}</span>
-                      <span className="text-charcoal-400 font-normal ml-1">
-                        ({product.reviewsCount} reviews)
-                      </span>
-                    </div>
+                    <span className="text-[11px] font-semibold text-charcoal-600 bg-cream-200/80 px-2.5 py-0.5 rounded-full border border-sepiaBorder">
+                      {product.pagesCount} Pages • Print-Ready PDF
+                    </span>
                   </div>
 
                   <h1 className="font-serif text-3xl font-bold text-forest-900 leading-tight">
@@ -178,21 +177,14 @@ export default function GenericProductPage({ params }: ProductPageProps) {
                       <span className="font-serif text-4xl font-bold text-forest-900">
                         {formatPrice(product.price)}
                       </span>
-                      {product.originalPrice && product.originalPrice > product.price && (
-                        <span className="text-base text-charcoal-400 line-through">
-                          ${product.originalPrice}
-                        </span>
-                      )}
                     </div>
                     <span className="text-xs text-forest-800 font-semibold block mt-0.5">
                       {product.pagesCount} Archival Pages &bull; Lifetime Unlimited Access
                     </span>
                   </div>
-                  {product.originalPrice && (
-                    <span className="text-xs uppercase font-bold text-emerald-800 bg-emerald-100 border border-emerald-300 px-2 py-1 rounded">
-                      Save ${(product.originalPrice - product.price).toFixed(0)}
-                    </span>
-                  )}
+                  <span className="text-[11px] font-bold text-forest-900 bg-forest-100/70 border border-forest-300 px-2.5 py-1 rounded">
+                    Instant Download
+                  </span>
                 </div>
 
                 {/* Description */}

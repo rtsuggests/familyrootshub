@@ -6,7 +6,10 @@ import { ContactClientView } from "@/components/ContactClientView";
 export const metadata: Metadata = {
   title: "Contact Archival Support",
   description:
-    "Get in touch with FamilyRootsHub's certified archival specialists for order assistance, template questions, or custom pedigree research inquiries.",
+    "Get in touch with FamilyRootsHub's archival team for order assistance, template questions, or pedigree research inquiries.",
+  alternates: {
+    canonical: "https://familyrootshub.com/contact",
+  },
 };
 
 export default function ContactPage() {

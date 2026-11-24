@@ -77,11 +77,6 @@ export const StickyCheckoutBar: React.FC<StickyCheckoutBarProps> = ({
               <span className="font-serif text-xl sm:text-2xl font-bold text-forest-900">
                 {formatPrice(product.price)}
               </span>
-              {product.originalPrice && (
-                <span className="text-xs text-charcoal-400 line-through">
-                  ${product.originalPrice}
-                </span>
-              )}
             </div>
             <div className="hidden sm:flex items-center text-[10px] text-forest-700 justify-end">
               <ShieldCheck className="w-3 h-3 mr-1" />

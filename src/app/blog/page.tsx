@@ -11,15 +11,9 @@ export const metadata: Metadata = {
   title: "Genealogy Research Guides & Tutorials",
   description:
     "Authoritative genealogy tutorials on archival 3-ring binder organization, Ahnentafel numbering, US census schedules, and digital planning.",
-  keywords: [
-    "genealogy blog",
-    "family history guides",
-    "archival binder tutorials",
-    "how to read census records",
-    "Ahnentafel numbering explanation",
-    "gravestone symbolism genealogy",
-    "GoodNotes genealogy planner"
-  ],
+  alternates: {
+    canonical: "https://familyrootshub.com/blog",
+  },
   openGraph: {
     title: "Genealogy Research Guides & Archival Methods | FamilyRootsHub",
     description:
@@ -79,7 +73,7 @@ export default function BlogIndexPage() {
             Genealogical Methodology & Archival Vault Guides
           </h1>
           <p className="text-sm sm:text-base text-charcoal-600 leading-relaxed">
-            In-depth tutorials, historical transcription guides, and preservation best practices crafted by certified lineage researchers to rescue family heritage from clutter and digital decay.
+            In-depth tutorials, historical transcription guides, and preservation best practices crafted by experienced family historians and archival specialists to rescue family heritage from clutter and digital decay.
           </p>
         </div>
 
@@ -158,7 +152,7 @@ export default function BlogIndexPage() {
             <h2 className="font-serif text-2xl font-bold text-forest-900">
               All Research Guides & Tutorials ({BLOG_ARTICLES.length})
             </h2>
-            <span className="text-xs text-charcoal-500 italic">Peer-reviewed archival standards</span>
+            <span className="text-xs text-charcoal-500 italic">National Archives &amp; NGS Aligned Methods</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

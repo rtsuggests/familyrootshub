@@ -110,7 +110,7 @@ export const TemplatesCatalogClientView: React.FC = () => {
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
           <div className="flex items-center justify-between mb-6">
             <p className="text-xs text-charcoal-500 font-medium">
-              Showing <span className="font-bold text-forest-900">{filteredProducts.length}</span> certified archival systems
+              Showing <span className="font-bold text-forest-900">{filteredProducts.length}</span> archival research systems
             </p>
             {selectedCategory !== "All" && (
               <button

@@ -246,16 +246,13 @@ export const GenealogyBinderClientView: React.FC = () => {
                       <span className="font-serif text-4xl font-bold text-forest-900">
                         {formatPrice(product.price)}
                       </span>
-                      <span className="text-base text-charcoal-400 line-through">
-                        ${product.originalPrice}
-                      </span>
                     </div>
                     <span className="text-xs text-forest-800 font-semibold block mt-0.5">
                       Includes US Letter + International A4 Formats
                     </span>
                   </div>
-                  <span className="text-xs uppercase font-bold text-emerald-800 bg-emerald-100 border border-emerald-300 px-2.5 py-1 rounded">
-                    Save $15 (52% Off)
+                  <span className="text-[11px] font-bold text-forest-900 bg-forest-100/70 border border-forest-300 px-2.5 py-1 rounded">
+                    Instant Download
                   </span>
                 </div>
 

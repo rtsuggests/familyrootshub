@@ -76,7 +76,7 @@ export const RecommendedGuides: React.FC<RecommendedGuidesProps> = ({
             Recommended Archival Research Guides & Tutorials
           </h2>
           <p className="text-sm sm:text-base text-charcoal-700 leading-relaxed">
-            Not ready to order right now? Learn the proven evidence-evaluation protocols, census extraction workflows, and archival filing systems used by certified genealogists.
+            Not ready to order right now? Learn the proven evidence-evaluation protocols, census extraction workflows, and archival filing systems used by professional family historians and archival researchers.
           </p>
         </div>
 

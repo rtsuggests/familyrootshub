@@ -76,45 +76,6 @@ export const ProductJsonLd: React.FC<ProductJsonLdProps> = ({ product, url }) =>
         },
       },
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: product.rating.toString(),
-      reviewCount: product.reviewsCount.toString(),
-      bestRating: "5",
-      worstRating: "1",
-    },
-    review: [
-      {
-        "@type": "Review",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
-        author: {
-          "@type": "Person",
-          name: "Margaret H. Sullivan",
-        },
-        datePublished: "2026-09-15",
-        reviewBody:
-          "This binder system solved twenty years of loose paper chaos in a single weekend. The Ahnentafel numbering and census extractors are museum-grade.",
-      },
-      {
-        "@type": "Review",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-        },
-        author: {
-          "@type": "Person",
-          name: "David K. Thornton",
-        },
-        datePublished: "2026-10-02",
-        reviewBody:
-          "The column-by-column census extraction forms make transcribing handwritten 1880 and 1900 records effortless. Exceptional quality.",
-      },
-    ],
   };
 
   return (

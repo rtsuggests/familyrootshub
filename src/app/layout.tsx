@@ -19,17 +19,7 @@ export const metadata: Metadata = {
   },
   description:
     "Turn family records into an organized heritage vault. Download archival pedigree charts, census extraction worksheets, and GoodNotes digital planners.",
-  keywords: [
-    "genealogy research binder",
-    "printable pedigree charts",
-    "Ahnentafel numbering system",
-    "census extraction worksheets",
-    "family history templates",
-    "acid-free archival supplies",
-    "digital genealogy planner GoodNotes",
-    "cousin relationship calculator"
-  ],
-  authors: [{ name: "FamilyRootsHub Archival Team" }],
+  authors: [{ name: "David Vance, Lead Archival Researcher" }],
   creator: "FamilyRootsHub",
   publisher: "FamilyRootsHub",
   openGraph: {
@@ -39,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "FamilyRootsHub",
     title: "FamilyRootsHub — Specialized Genealogy Templates & Archival Vault",
     description:
-      "Turn centuries of family clutter into an organized heritage vault. Certified archival printable systems & research templates.",
+      "Turn centuries of family clutter into an organized heritage vault. Museum-grade printable archival systems & research templates.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80",

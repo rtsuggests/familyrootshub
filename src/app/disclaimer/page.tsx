@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Disclaimer & Disclosure",
   description:
     "Official FTC affiliate disclosure, archival research disclaimer, and educational purpose statement for FamilyRootsHub.",
+  alternates: {
+    canonical: "https://familyrootshub.com/disclaimer",
+  },
   openGraph: {
     title: "Disclaimer & Affiliate Disclosure | FamilyRootsHub",
     description: "Read our full FTC affiliate disclosure and genealogical research disclaimer.",
@@ -48,7 +51,7 @@ export default function DisclaimerPage() {
                 Our Editorial Integrity Guarantee:
               </h3>
               <p className="text-xs text-charcoal-600">
-                We only recommend physical archival products and tools that meet the rigorous conservation standards of the Library of Congress and the US National Archives (NARA). We never accept paid compensation for favorable product reviews or biased recommendations.
+                We only recommend physical archival products and tools that follow established paper preservation guidelines from major archival institutions (such as acid-free, buffered, and PAT-tested materials). We never accept paid compensation for favorable product reviews or biased recommendations.
               </p>
             </div>
           </section>

@@ -48,7 +48,7 @@ export const ContactClientView: React.FC = () => {
             <div>
               <h2 className="font-serif text-2xl font-bold text-cream-50">Support Headquarters</h2>
               <p className="text-xs text-charcoal-300 mt-1">
-                FamilyRootsHub is managed by certified lineage researchers and archival keepers.
+                FamilyRootsHub is managed by experienced family historians and archival specialists.
               </p>
             </div>
 

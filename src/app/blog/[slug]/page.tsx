@@ -50,7 +50,9 @@ export function generateMetadata({ params }: BlogPageProps): Metadata {
   return {
     title: seoTitle,
     description: article.metaDescription,
-    keywords: article.keywords,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
       title: `${seoTitle} | FamilyRootsHub`,
       description: article.metaDescription,
@@ -72,9 +74,6 @@ export function generateMetadata({ params }: BlogPageProps): Metadata {
       title: seoTitle,
       description: article.metaDescription,
       images: [article.coverImage],
-    },
-    alternates: {
-      canonical: url,
     },
   };
 }

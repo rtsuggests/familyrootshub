@@ -84,11 +84,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             <span className="font-bold text-bronze-800 uppercase tracking-wider text-[11px]">
               {product.category}
             </span>
-            <div className="flex items-center space-x-1 text-amber-500">
-              <Star className="w-3.5 h-3.5 fill-current" />
-              <span className="font-bold text-charcoal-800 text-xs">{product.rating}</span>
-              <span className="text-charcoal-500 text-[11px]">({product.reviewsCount})</span>
-            </div>
+            <span className="text-[11px] font-semibold text-charcoal-600 bg-cream-200/70 px-2.5 py-0.5 rounded-full border border-sepiaBorder">
+              {product.pagesCount} Pages • PDF
+            </span>
           </div>
 
           {/* Title */}
@@ -124,11 +122,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               <span className="font-serif text-2xl font-bold text-forest-900">
                 {formatPrice(product.price)}
               </span>
-              {product.originalPrice && product.originalPrice > product.price && (
-                <span className="text-xs text-charcoal-500 line-through">
-                  ${product.originalPrice}
-                </span>
-              )}
             </div>
             <span className="text-[11px] text-charcoal-500 block">
               {product.pagesCount} Pages &bull; Lifetime Access

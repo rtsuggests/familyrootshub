@@ -55,6 +55,7 @@ export const FaqAccordion: React.FC<FaqAccordionProps> = ({
               >
                 <button
                   type="button"
+                  id={`faq-question-${idx}`}
                   onClick={() => toggle(idx)}
                   className="w-full text-left px-5 sm:px-6 py-4 sm:py-5 flex items-center justify-between gap-4 focus:outline-none focus:ring-2 focus:ring-forest-600 rounded-xl"
                   aria-expanded={isOpen}
@@ -73,14 +74,18 @@ export const FaqAccordion: React.FC<FaqAccordionProps> = ({
                   </div>
                 </button>
 
-                {isOpen && (
-                  <div
-                    id={`faq-answer-${idx}`}
-                    className="px-5 sm:px-6 pb-5 pt-1 text-sm text-charcoal-700 leading-relaxed border-t border-sepiaBorder/40 animate-fadeIn"
-                  >
-                    {item.answer}
-                  </div>
-                )}
+                <div
+                  id={`faq-answer-${idx}`}
+                  role="region"
+                  aria-labelledby={`faq-question-${idx}`}
+                  aria-hidden={!isOpen}
+                  className={cn(
+                    "px-5 sm:px-6 pb-5 pt-1 text-sm text-charcoal-700 leading-relaxed border-t border-sepiaBorder/40",
+                    isOpen ? "block animate-fadeIn" : "hidden"
+                  )}
+                >
+                  {item.answer}
+                </div>
               </div>
             );
           })}

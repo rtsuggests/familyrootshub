@@ -20,6 +20,9 @@ export const metadata = {
   title: "About Our Archival Mission",
   description:
     "Learn why FamilyRootsHub builds museum-grade, acid-free genealogy binders and worksheets designed to protect family history for centuries.",
+  alternates: {
+    canonical: "https://familyrootshub.com/about",
+  },
 };
 
 export default function AboutPage() {
@@ -122,13 +125,45 @@ export default function AboutPage() {
             </div>
 
             {/* Founder Personal Story & Passion */}
-            <div className="mt-14 pt-12 border-t border-sepiaBorder space-y-6">
-              <span className="text-xs font-bold uppercase tracking-widest text-bronze-700 bg-bronze-100 px-3 py-1 rounded-full border border-bronze-200">
-                Founder&apos;s Origin Story
-              </span>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-forest-900 leading-tight">
-                The Water-Damaged Shoebox in My Grandmother&apos;s Attic
-              </h3>
+            <div className="mt-14 pt-12 border-t border-sepiaBorder space-y-8">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-widest text-bronze-800 bg-bronze-100 px-3 py-1 rounded-full border border-bronze-200">
+                  Founder&apos;s Origin &amp; Editorial Leadership
+                </span>
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-forest-900 leading-tight mt-3">
+                  The Water-Damaged Shoebox in My Grandmother&apos;s Attic
+                </h3>
+              </div>
+
+              {/* Founder Profile Card */}
+              <div className="bg-cream-50 rounded-2xl border-2 border-forest-800/80 p-6 sm:p-8 shadow-heritage flex flex-col md:flex-row gap-6 items-start">
+                <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-bronze-500 shrink-0 shadow-md bg-forest-900 flex items-center justify-center text-cream-100 font-serif text-3xl font-bold">
+                  DV
+                </div>
+                <div className="space-y-3 flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                    <div>
+                      <h4 className="font-serif text-xl font-bold text-forest-900">David Vance</h4>
+                      <p className="text-xs font-semibold uppercase tracking-wider text-bronze-800">
+                        Lead Archival Researcher &amp; Founder, FamilyRootsHub
+                      </p>
+                    </div>
+                    <span className="text-[11px] font-bold text-forest-800 bg-forest-100 px-3 py-1 rounded-full border border-forest-200 w-fit">
+                      18+ Years Archival Experience
+                    </span>
+                  </div>
+                  <p className="text-xs sm:text-sm text-charcoal-700 leading-relaxed">
+                    David Vance is a veteran family historian, archival records indexing specialist, and preservation advocate. Having spent nearly two decades transcribing 18th- and 19th-century land grants, probate inventories, and federal census schedules across the National Archives (NARA), state historical societies, and county courthouses, David founded FamilyRootsHub to bridge the gap between fragile digital cloud subscriptions and permanent physical family heritage.
+                  </p>
+                  <div className="flex flex-wrap items-center gap-2 pt-1 text-[11px] text-charcoal-600">
+                    <span className="font-bold text-forest-900">Core Focus:</span>
+                    <span className="bg-cream-200 px-2.5 py-0.5 rounded-md border border-sepiaBorder">NARA Decennial Schedule Transcriptions</span>
+                    <span className="bg-cream-200 px-2.5 py-0.5 rounded-md border border-sepiaBorder">Ahnentafel Lineage Mathematics</span>
+                    <span className="bg-cream-200 px-2.5 py-0.5 rounded-md border border-sepiaBorder">ANSI/NISO Z39.48 Paper Longevity</span>
+                  </div>
+                </div>
+              </div>
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-charcoal-700 leading-relaxed">
                 <p>
                   FamilyRootsHub started fifteen years ago after my maternal grandmother passed away. In the rafters of her upstate New York attic sat a cardboard boot box taped together with yellowed masking tape. Inside were original 1870 cabinet cards, civil war discharge papers, and handwritten German baptismal slips. But the acidic wood-pulp cardboard and sulfurous adhesive had begun eating through the paper edges.
@@ -140,7 +175,7 @@ export default function AboutPage() {
                   I teamed up with archival preservationists, certified genealogists, and graphic designers to build a complete family records system that is both beautiful and bulletproof. Every line weight, margin gutter, and column header in our templates was engineered to make physical family history intuitive, permanent, and accessible to anyone.
                 </p>
                 <p>
-                  Today, FamilyRootsHub serves thousands of dedicated family historians, genealogists, and descendants across North America, the UK, and Australia. We are deeply grateful to be a small part of your family legacy.
+                  Today, FamilyRootsHub serves dedicated family historians, genealogists, and descendants across North America, the UK, and Australia. Every single template in our vault is personally fact-checked against published National Archives schedules before release. We are deeply honored to be part of your family legacy.
                 </p>
               </div>
             </div>

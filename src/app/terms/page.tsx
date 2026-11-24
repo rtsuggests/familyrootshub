@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Terms of Service",
   description:
     "Terms of Service and digital purchase license agreement for FamilyRootsHub genealogy templates, printables, and guides.",
+  alternates: {
+    canonical: "https://familyrootshub.com/terms",
+  },
   openGraph: {
     title: "Terms of Service | FamilyRootsHub",
     description: "Read the terms governing use of FamilyRootsHub and our digital archival products.",

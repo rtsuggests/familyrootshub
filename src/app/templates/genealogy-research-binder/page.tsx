@@ -12,14 +12,9 @@ export const metadata: Metadata = {
   title: "35-Page Printable Research Binder",
   description:
     "Download the archival 35-page genealogy binder. Features 5-generation pedigree charts, family group sheets, and census extraction grids.",
-  keywords: [
-    "genealogy research binder",
-    "printable pedigree charts",
-    "Ahnentafel binder organization",
-    "census extraction worksheets",
-    "family history organization system",
-    "3 ring binder genealogy templates"
-  ],
+  alternates: {
+    canonical: pageUrl,
+  },
   openGraph: {
     title: "35-Page Master Genealogy Research Binder | FamilyRootsHub",
     description:
@@ -40,9 +35,6 @@ export const metadata: Metadata = {
     title: "35-Page Master Genealogy Research Binder System",
     description: "The complete physical archival system for 3-ring genealogy binders.",
     images: [product.coverImage],
-  },
-  alternates: {
-    canonical: pageUrl,
   },
 };
 

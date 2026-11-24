@@ -84,11 +84,9 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                   {product.category}
                 </span>
                 <span className="text-charcoal-400">&bull;</span>
-                <div className="flex items-center text-amber-500 font-bold">
-                  <Star className="w-3.5 h-3.5 fill-current mr-1" />
-                  <span>{product.rating}</span>
-                  <span className="text-charcoal-400 text-xs font-normal ml-1">({product.reviewsCount} reviews)</span>
-                </div>
+                <span className="text-xs font-semibold text-charcoal-600 bg-cream-200/80 px-2 py-0.5 rounded">
+                  {product.pagesCount} Pages &bull; Vector PDF
+                </span>
               </div>
 
               <h2 id="quickview-title" className="font-serif text-2xl font-bold text-forest-900 leading-tight">
@@ -102,11 +100,6 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                 <span className="font-serif text-3xl font-bold text-forest-900">
                   {formatPrice(product.price)}
                 </span>
-                {product.originalPrice && product.originalPrice > product.price && (
-                  <span className="text-sm text-charcoal-400 line-through">
-                    ${product.originalPrice}
-                  </span>
-                )}
                 <span className="text-xs text-forest-700 font-semibold bg-forest-100 px-2 py-0.5 rounded">
                   Instant Archival PDF
                 </span>
