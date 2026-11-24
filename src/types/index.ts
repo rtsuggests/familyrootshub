@@ -36,8 +36,8 @@ export interface Testimonial {
   location: string;
   content: string;
   rating?: number;
-  verified?: boolean;
-  avatar?: string;
+  verified: boolean;
+  avatar: string;
   experienceYears?: string;
 }
 
@@ -49,14 +49,20 @@ export interface GearItem {
   whyArchival: string;
   priceRange: string;
   affiliateUrl: string;
-  badge?: string;
+  badge: string;
   rating?: number;
   reviewsCount?: number;
-  iconName: string;
+  iconName?: string;
 }
 
 export interface FaqItem {
   question: string;
   answer: string;
   category?: string;
+}
+
+export interface LeadFormData {
+  email: string;
+  firstName?: string;
+  researchFocus?: string;
 }

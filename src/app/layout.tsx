@@ -59,6 +59,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "googlef26005d12fedc1e0",
+    other: {
+      "p:domain_verify": "1487d8b1e5c03d3f2af979e80678f996",
+    },
   },
 };
 
@@ -70,6 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <meta name="p:domain_verify" content="1487d8b1e5c03d3f2af979e80678f996" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM Context File" />
         <OrganizationJsonLd />
